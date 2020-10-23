@@ -3,13 +3,8 @@ import React from "react";
 function List(props) {
 
 
-    const data = props.filteredData1.map(
-        (data, i) => <li key={i}> {data} </li>
-    );
- 
     return (
         <div>
-
             <div className='UnitContainer'>
                 <div className='h3gray1'>
                     <h3>UNIT</h3>
@@ -49,10 +44,11 @@ function List(props) {
                 
             </div>
 
-            {/* <div>{data}</div> */}
+            
+
             <div>
 
-                {props.filteredData2.map(a => {
+                {props.filteredData1.map(a => {
                     return (
                         <div  className='UnitContainer'>
                             <div className='name'>

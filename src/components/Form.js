@@ -85,24 +85,17 @@ function Form() {
       'Pylon',
     ]
 
-    const [filteredData, setFilteredData] = useState(Protoss);
-    const [filteredDataB, setFilteredDataB] = useState(Protoss2);
-  
-    // function handleFilterChange(f) {
-    //   const fd = Protoss.filter((datum) => {
-    //     return datum.toLowerCase().includes(f.toLowerCase());
-    //   });
-    //   setFilteredData(fd);
-    //   setFilter(f);
-    // }
+    const [filteredData, setFilteredData] = useState(Protoss2);
+   
 
+      
     function handleFilterChange(f) {
-        const fd = Protoss2.filter((datum) => {
-          return datum.toLowerCase().includes(f.toLowerCase());
-        });
-        setFilteredDataB(fd);
-        setFilter(f);
-      }
+    const fd = Protoss2.filter( r => {
+        return r.name.toLowerCase().includes(f.toLowerCase());
+    })
+    setFilteredData(fd);
+    setFilter(f);
+    }   
 
   return (
     <div>
@@ -113,8 +106,7 @@ function Form() {
         <SearchFilter filter={filter} onFilterChange={handleFilterChange} />
 
         <List 
-            filteredData1={filteredData}
-            filteredData2 = {filteredDataB}
+            filteredData1 = {filteredData}
         />
 
       </div>
