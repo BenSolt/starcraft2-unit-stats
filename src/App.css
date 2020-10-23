@@ -16,8 +16,13 @@ h1 {
   font-size: 45px;
 }
 h2 {
-  margin-top: 1.5em;
+  margin-left: 20px;
+  
 }
+h3 {
+  margin-left: 20px;
+}
+
 p {
   font-size: 16px;
 }
@@ -41,4 +46,46 @@ pre {
 code:before,
 code:after {
   content: '\`';
+}
+
+
+
+
+/* //////////////////////////// */
+
+.InfoBar{
+  display: flex; 
+}
+
+.UnitContainer{
+  display: flex;
+  justify-content: space-evenly;
+  border: 2px solid black;
+}
+
+
+.name{
+  width: 120px;
+  background: gray;
+}
+
+.h3gray1{
+  width: 120px;
+  background: rgb(106, 108, 253);
+}
+
+
+.h3gray2{
+  width: 120px;
+  background: gray;
+}
+
+.InputContainer{
+  margin: 15px;
+}
+
+.Input{
+  border-radius: 5px;
+  border: 2px solid black;
+  padding:1rem;
 }
