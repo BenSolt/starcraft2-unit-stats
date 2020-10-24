@@ -14,9 +14,6 @@ function App() {
   return (
     <div>
       <Navbar/>
-
-      {/* <Form/> */}
-
       <Route exact path="/" component={Form}/>
       <Route path="/protoss" component={FormProtoss} />
       <Route path="/terran" component={FormTerran} />

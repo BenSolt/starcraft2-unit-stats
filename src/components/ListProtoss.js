@@ -5,7 +5,6 @@ function ListProtoss(props) {
 
     return (
             <div>
-                <h1>PROTOSS</h1>
                 {props.filteredData1.map(a => {
                     return (
                         <div  className='UnitContainer'>

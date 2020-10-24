@@ -5,7 +5,6 @@ function ListTerran(props) {
 
     return (
             <div>
-                <h1>TERRAN</h1>
                 {props.filteredData1.map(a => {
                     return (
                         <div  className='UnitContainer'>

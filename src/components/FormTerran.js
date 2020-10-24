@@ -6,7 +6,7 @@ import SearchFilter from './SearchFilter';
 import ListHeader from './ListHeader';
 import ListTerran from "./ListTerran";
 
-import {Protoss} from './DataProtoss';
+import {Terran} from './DataTerran';
 
 function FormTerran(props) {
 
@@ -18,12 +18,12 @@ function FormTerran(props) {
     //     'Pylon',
     // ]
 
-    const [filteredData, setFilteredData] = useState(Protoss);
+    const [filteredData, setFilteredData] = useState(Terran);
     const [filter, setFilter] = useState("");
     
 
     function handleFilterChange(f) {
-        const fd = Protoss.filter(r => {
+        const fd = Terran.filter(r => {
             return r.name.toLowerCase().includes(f.toLowerCase());
         })
         setFilteredData(fd);
@@ -37,7 +37,7 @@ function FormTerran(props) {
                 <div className="Searchbarholder" >
                     <div className="ImageTerran" >
                         <div className='Searchbar2'>
-                            <h3 className='Searchtext'>Search Units:</h3>
+                            <h1 className='Searchtext'>TERRAN</h1>
                             <SearchFilter filter={filter} onFilterChange={handleFilterChange} />
                         </div>
                     </div>

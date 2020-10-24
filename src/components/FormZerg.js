@@ -6,7 +6,7 @@ import SearchFilter from './SearchFilter';
 import ListHeader from './ListHeader';
 import ListZerg from "./ListZerg";
 
-import {Protoss} from './DataProtoss';
+import {Zerg} from './DataZerg';
 
 function FormZerg(props) {
 
@@ -18,12 +18,12 @@ function FormZerg(props) {
     //     'Pylon',
     // ]
 
-    const [filteredData, setFilteredData] = useState(Protoss);
+    const [filteredData, setFilteredData] = useState(Zerg);
     const [filter, setFilter] = useState("");
     
 
     function handleFilterChange(f) {
-        const fd = Protoss.filter(r => {
+        const fd = Zerg.filter(r => {
             return r.name.toLowerCase().includes(f.toLowerCase());
         })
         setFilteredData(fd);
@@ -35,9 +35,9 @@ function FormZerg(props) {
 
             <div>
                 <div className="Searchbarholder" >
-                    <div className="Searchbar" >
+                    <div className="ImageZerg" >
                         <div className='Searchbar2'>
-                            <h3 className='Searchtext'>Search Units:</h3>
+                            <h1 className='Searchtext'>ZERG</h1>
                             <SearchFilter filter={filter} onFilterChange={handleFilterChange} />
                         </div>
                     </div>

@@ -1,3 +1,23 @@
+import Img_Probe from "../images/Icon_Protoss_Probe.jpg";
+import Img_Zealot from "../images/Icon_Protoss_Zealot.jpg";
+import Img_Sentry from "../images/Icon_Protoss_Sentry.jpg";
+import Img_Stalker from "../images/Icon_Protoss_Stalker.jpg";
+import Img_Adept from "../images/Icon_Protoss_Adept.jpg";
+import Img_Archon from "../images/Icon_Protoss_Archon.jpg";
+import Img_Carrier from "../images/Icon_Protoss_Carrier.jpg";
+import Img_Colossus from "../images/Icon_Protoss_Colossus.jpg";
+import Img_DarkTemplar from "../images/Icon_Protoss_Dark_Templar.jpg";
+import Img_Disruptor from "../images/Icon_Protoss_Disruptor.jpg";
+import Img_HighTemplar from "../images/Icon_Protoss_High_Templar.jpg";
+import Img_Immortal from "../images/Icon_Protoss_Immortal.jpg";
+import Img_Mothership from "../images/Icon_Protoss_Mothership.jpg";
+import Img_Observer from "../images/Icon_Protoss_Observer.jpg";
+import Img_Oracle from "../images/Icon_Protoss_Oracle.jpg";
+import Img_Phoenix from "../images/Icon_Protoss_Phoenix.jpg";
+import Img_Tempest from "../images/Icon_Protoss_Tempest.jpg";
+import Img_WarpPrism from "../images/Icon_Protoss_Warp_Prism.jpg";
+import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
+
 const Terran = [
 
     {

@@ -5,7 +5,6 @@ function ListZerg(props) {
 
     return (
             <div>
-                <h1>ZERG</h1>
                 {props.filteredData1.map(a => {
                     return (
                         <div  className='UnitContainer'>

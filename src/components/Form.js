@@ -33,16 +33,15 @@ function Form(props) {
 
             <div>
                 <div className="Searchbarholder" >
-                    <div>
-                    {/* <div className="Searchbar" > */}
-                        <div className='Searchbar2'>
+                    <div className="Searchbar" >
+                        {/* <div className='Searchbar2'>
                             <h3 className='Searchtext'>Search Units:</h3>
                             <SearchFilter filter={filter} onFilterChange={handleFilterChange} />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
-                <ListHeader filteredData1={filteredData}/>
+                {/* <ListHeader filteredData1={filteredData}/> */}
 
 
             </div>
