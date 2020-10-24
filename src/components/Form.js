@@ -149,8 +149,8 @@ function Form() {
         },
 
         {
-            name: "Warp Prism",
-            image: Img_WarpPrism,
+            name: "Immortal",
+            image: Img_Immortal,
             supply: 1,
             minerals: 1,
             gas: 1,
@@ -162,8 +162,8 @@ function Form() {
         },
 
         {
-            name: "Immortal",
-            image: Img_Immortal,
+            name: "Warp Prism",
+            image: Img_WarpPrism,
             supply: 1,
             minerals: 1,
             gas: 1,
@@ -214,8 +214,8 @@ function Form() {
         },
 
         {
-            name: "Void Ray",
-            image: Img_VoidRay,
+            name: "Oracle",
+            image: Img_Oracle,
             supply: 1,
             minerals: 1,
             gas: 1,
@@ -227,8 +227,8 @@ function Form() {
         },
 
         {
-            name: "Oracle",
-            image: Img_Oracle,
+            name: "Void Ray",
+            image: Img_VoidRay,
             supply: 1,
             minerals: 1,
             gas: 1,
@@ -277,9 +277,6 @@ function Form() {
             airAttack: 1,
             bonus: 1
         }
-
-
-
     ]
 
 
@@ -307,10 +304,13 @@ function Form() {
     return (
         <div>
 
-            <div className="Searchbar" >
-                <h3 className='searchtext'>Search Units:</h3>
+            <div>
+                <div className="Searchbar" >
+                    <h3 className='searchtext'>Search Units:</h3>
+                    <SearchFilter filter={filter} onFilterChange={handleFilterChange} />
+                </div>
 
-                <SearchFilter filter={filter} onFilterChange={handleFilterChange} />
+              
 
                 <List
                     filteredData1={filteredData}

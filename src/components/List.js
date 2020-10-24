@@ -9,7 +9,7 @@ function List(props) {
 
 
     return (
-        <div>
+        <div className='t'>
             <div className='UnitContainer'>
                 <div className='h3gray1'>
                     <h3>UNIT</h3>
@@ -21,12 +21,12 @@ function List(props) {
 
                 <div className='h3gray1'>
                     {/* <h3>MINERALS</h3> */}
-                    <img className='image' src={Img_mineral}/>
+                    <img className='image1' src={Img_mineral}/>
                 </div>
 
                 <div className='h3gray1'>
                     {/* <h3>GAS</h3> */}
-                    <img className='image' src={Img_gas}/>
+                    <img className='image1' src={Img_gas}/>
                 </div>
 
                 <div className='h3gray1'>
@@ -59,8 +59,8 @@ function List(props) {
                     return (
                         <div  className='UnitContainer'>
                             <div className='name'>
-                                <h2>{a.name}</h2>
-                                <img className='image' src={a.image}></img>
+                                <h3 className='name'>{a.name}</h3>
+                                <img className='image2' src={a.image}></img>
                             </div>
 
                             <div className='h3gray2'>
