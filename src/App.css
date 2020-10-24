@@ -15,11 +15,13 @@ main {
 h1 {
   font-size: 45px;
 }
+
 h2 {
   margin-left: 5px;
 }
+
 h3 {
-  margin-left: 20px;
+  text-align: center;
 }
 
 p {
@@ -71,10 +73,13 @@ code:after {
 
 .image1{
   padding: 10px 25px 0;
+  
 }
 
 .image2{
   padding: 0 25px 0;
+  width: 76px;
+  height: 76px;
 }
 
 .h3gray1{
@@ -82,12 +87,13 @@ code:after {
   /* background: rgb(106, 108, 253); */
 }
 
-
 .h3gray2{
   width: 120px;
   padding: 25px 0 0;
   /* background: gray; */
 }
+
+
 
 .InputContainer{
   margin: 15px;
@@ -101,13 +107,25 @@ code:after {
 
 /* ///////////////////////////////////// */
 
+.Searchbarholder{
+  background: black;
+}
+
+.Searchtext{
+  color: white;
+}
+
 .Searchbar{
-  margin: 0.5rem 0 0.5rem;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),*/
+  background-image:url('./StarCraft_II_Logo.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 180px; 
+}
+
+.Searchbar2{
   display: flex;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-  url('./StarCraft_II_Logo.jpg');
-  /* background-size: cover; */
-  /* background-repeat: no-repeat; */
-  /* height: 200px; */
-  /* justify-content: center; */
+  /* padding-top: 3rem; */
+  padding:3rem 2rem 0;
 }
