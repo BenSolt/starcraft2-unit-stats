@@ -1,5 +1,10 @@
 import React from "react";
 
+
+
+import Img_mineral from "../images/minerals.jpg";
+import Img_gas from "../images/Gas.jpg";  
+
 function List(props) {
 
 
@@ -15,11 +20,13 @@ function List(props) {
                 </div>
 
                 <div className='h3gray1'>
-                    <h3>MINERALS</h3>
+                    {/* <h3>MINERALS</h3> */}
+                    <img className='image' src={Img_mineral}/>
                 </div>
 
                 <div className='h3gray1'>
-                    <h3>GAS</h3>
+                    {/* <h3>GAS</h3> */}
+                    <img className='image' src={Img_gas}/>
                 </div>
 
                 <div className='h3gray1'>
@@ -53,6 +60,7 @@ function List(props) {
                         <div  className='UnitContainer'>
                             <div className='name'>
                                 <h2>{a.name}</h2>
+                                <img className='image' src={a.image}></img>
                             </div>
 
                             <div className='h3gray2'>
