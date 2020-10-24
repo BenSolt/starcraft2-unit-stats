@@ -2,11 +2,13 @@ import React, { useState } from "react";
 // import axios from "axios";
 
 import SearchFilter from './SearchFilter';
+
 import ListHeader from './ListHeader';
+import ListProtoss from './ListProtoss';
 
 import {Protoss} from './DataProtoss';
 
-function Form(props) {
+function FormProtoss(props) {
 
         // const Protoss = [
 
@@ -33,8 +35,7 @@ function Form(props) {
 
             <div>
                 <div className="Searchbarholder" >
-                    <div>
-                    {/* <div className="Searchbar" > */}
+                    <div className="Searchbar" >
                         <div className='Searchbar2'>
                             <h3 className='Searchtext'>Search Units:</h3>
                             <SearchFilter filter={filter} onFilterChange={handleFilterChange} />
@@ -42,7 +43,9 @@ function Form(props) {
                     </div>
                 </div>
 
-                <ListHeader filteredData1={filteredData}/>
+                <ListHeader/>
+
+                <ListProtoss filteredData1={filteredData}/>
 
 
             </div>
@@ -50,4 +53,4 @@ function Form(props) {
     );
 }
 
-export default Form;
+export default FormProtoss;

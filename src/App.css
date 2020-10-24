@@ -21,7 +21,7 @@ h2 {
 }
 
 h3 {
-  text-align: center;
+  text-align: center; 
 }
 
 p {
@@ -52,7 +52,18 @@ code:after {
 
 
 
-/* //////////////////////////// */
+/* /////////// NAVBAR NAVBAR NAVBAR ///////////////// */
+/* .Navbarholder{
+  display: flex;
+} */
+.navlinkholder{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+/* //////////////////LIST LIST LIST //////////////////////////////// */
+
 
 .InfoBar{
   display: flex; 
@@ -64,7 +75,10 @@ code:after {
   border: 2px solid black;
 }
 
-
+.Checkbox1{
+  height: 24px;
+  width: 24px;
+}
 
 .name{
   margin: 3px 30px 3px;
@@ -73,7 +87,7 @@ code:after {
 
 .image1{
   padding: 10px 25px 0;
-  
+
 }
 
 .image2{
@@ -82,9 +96,9 @@ code:after {
   height: 76px;
 }
 
-.h3gray1{
+.TextHeader{
   width: 120px;
-  /* background: rgb(106, 108, 253); */
+  text-decoration: underline;
 }
 
 .h3gray2{
@@ -128,4 +142,28 @@ code:after {
   display: flex;
   /* padding-top: 3rem; */
   padding:3rem 2rem 0;
+}
+
+.ImageProtoss{
+  background-image:url('./StarCraft_II_Protoss.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 180px; 
+}
+
+.ImageTerran{
+  background-image:url('./StarCraft_II_Terran.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 180px; 
+}
+
+.ImageZerg{
+  background-image:url('./StarCraft_II_Zerg.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 180px; 
 }

@@ -269,9 +269,7 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
             bonus: 1
         }
     ]
-
-
-
+    
 export {
     Protoss
 }
