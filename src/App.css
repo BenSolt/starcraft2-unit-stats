@@ -102,6 +102,13 @@ code:after {
   border: 2px solid black;
 }
 
+.info{
+  display: none;
+  background: gray;
+  height: 150px;
+  border: 2px solid black;
+}
+
 .Checkbox1{
   height: 24px;
   width: 24px;
@@ -195,3 +202,5 @@ code:after {
   background-repeat: no-repeat;
   height: 180px; 
 }
+
+

@@ -13,30 +13,30 @@ function ListProtoss(props) {
         }
       }
 
+      function toggleInfo() {
+        var x = document.getElementById("myDIV");
+       
+        if (x.style.display === 'block'){
+            x.style.display = 'none';
+        } else {
+            x.style.display = "block";
+        }
+      }
+
+
         const [recipeToEdit, setRecipeToEdit] = useState(props.filteredData1);
         const [editing, setEditing] = useState(false); 
 
 
-        const editRecipe = e => {
-        setEditing(true);
-        setRecipeToEdit(e);
+        const editRecipe = e => {    
+            setEditing(true);
+            // setRecipeToEdit(e);
         };
 
   
 
     return (
             <div>
-
-                {/* {props.filteredData1.map(recip => ( 
-                            <div className="RecipeCard" key={recip.id} >
-                                <h2>{recip.name}</h2>
-                                <div className="BtnHolder">
-                                <button className="BtnEditRecipe" onClick={() => editRecipe(recip)}>Edit Recipe</button>
-                                </div>
-
-                            </div>
-                        ))} */}
-    
                 {props.filteredData1.map(a => (
                     <div key={a.id} >
                         <div  className='UnitContainer'>
@@ -44,16 +44,12 @@ function ListProtoss(props) {
                             <div>
                                 <h3 className='name'>{a.name}</h3>
                                 <img className='image2' alt='unit' src={a.image}></img>
-                                <button onClick={() => editRecipe()}>Click Me</button>
+                                <button onClick={() => editRecipe(a)}>Click Me1</button>
                                 <button className="BtnEditCancel" onClick={() => setEditing(false)}>Cancel</button>
 
-                                {/* <form >
-                                <h3 className='name'>Bonus Against:</h3>
-                                <input id='myCheck' className='Checkbox1' type="checkbox" onClick={myFunction}/> 
-                                </form>    */}
-                               
+                                {/* <button onClick={toggleInfo}>Click Me2</button> 
 
-                                {/* <div id="text">
+                                <div className='info' id="myDIV">
                                 This is my DIV element.
                                 </div> */}
 
