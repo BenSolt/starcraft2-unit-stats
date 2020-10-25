@@ -23,6 +23,7 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
     const Protoss = [
 
         {
+            id: 1,
             name: "Probe",
             image: Img_Probe,
             supply: 1,
@@ -36,6 +37,7 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
         },
 
         {
+            id: 2,
             name: "Zealot",
             image: Img_Zealot,
             supply: 2,
@@ -49,6 +51,7 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
         },
 
         {
+            id: 3,
             name: "Sentry",
             image: Img_Sentry,
             supply: 2,
@@ -62,6 +65,7 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
         },
 
         {
+            id: 4,
             name: "Stalker",
             image: Img_Stalker,
             supply: 2,
@@ -75,6 +79,7 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
         },
 
         {
+            id: 5,
             name: "Adept",
             image: Img_Adept,
             supply: 1,
@@ -88,6 +93,7 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
         },
 
         {
+            id: 6,
             name: "High Templar",
             image: Img_HighTemplar,
             supply: 1,
@@ -101,6 +107,7 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
         },
 
         {
+            id: 7,
             name: "Dark Templar",
             image: Img_DarkTemplar,
             supply: 1,
@@ -114,6 +121,7 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
         },
 
         {
+            id: 8,
             name: "Archon",
             image: Img_Archon,
             supply: 1,
@@ -127,6 +135,7 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
         },
 
         {
+            id: 9,
             name: "Observer",
             image: Img_Observer,
             supply: 1,
@@ -140,6 +149,7 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
         },
 
         {
+            id: 10,
             name: "Immortal",
             image: Img_Immortal,
             supply: 1,
@@ -153,6 +163,7 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
         },
 
         {
+            id: 11,
             name: "Warp Prism",
             image: Img_WarpPrism,
             supply: 1,
@@ -166,6 +177,7 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
         },
 
         {
+            id: 12,
             name: "Colossus",
             image: Img_Colossus,
             supply: 1,
@@ -179,6 +191,7 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
         },
 
         {
+            id: 13,
             name: "Disruptor",
             image: Img_Disruptor,
             supply: 1,
@@ -192,6 +205,7 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
         },
 
         {
+            id: 14,
             name: "Phoenix",
             image: Img_Phoenix,
             supply: 1,
@@ -205,6 +219,7 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
         },
 
         {
+            id: 15,
             name: "Oracle",
             image: Img_Oracle,
             supply: 1,
@@ -218,6 +233,7 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
         },
 
         {
+            id: 16,
             name: "Void Ray",
             image: Img_VoidRay,
             supply: 1,
@@ -231,6 +247,7 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
         },
 
         {
+            id: 17,
             name: "Tempest",
             image: Img_Tempest,
             supply: 1,
@@ -244,6 +261,7 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
         },
 
         {
+            id: 18,
             name: "Carrier",
             image: Img_Carrier,
             supply: 1,
@@ -257,6 +275,7 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
         },
 
         {
+            id: 19,
             name: "Mothership",
             image: Img_Mothership,
             supply: 1,
