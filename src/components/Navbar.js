@@ -16,7 +16,7 @@ function Navbar() {
         
     <div className='Navbarholder'>
             
-            <nav className='navlinkholder'>
+            <nav className='Navlinkholder'>
                
                 <NavLink className='navlink' to='/'>HOME</NavLink>
                 <NavLink className='navlink' to='/terran'>TERRAN</NavLink>

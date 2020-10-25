@@ -45,7 +45,7 @@ function FormProtoss(props) {
 
                 <ListHeader/>
 
-                <ListProtoss filteredData1={filteredData}/>
+                <ListProtoss  filteredData1={filteredData}/>
 
 
             </div>

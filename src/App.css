@@ -54,14 +54,35 @@ code:after {
 
 /* /////////// NAVBAR NAVBAR NAVBAR ///////////////// */
 .Navbarholder{
- height: 100px;
+  background: black;
+  background-image:url('./images/StarCraft_II_Logo.jpg');
+  height: 200px; 
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid red;
 }
-.navlinkholder{
+.Navlinkholder{
   display: flex;
   justify-content: space-evenly;
 }
 
+.navlink{
+  font-weight: bold;
+  color: white;
+  border-radius: 2px;
+  text-align: center;
+  background: rgb(0, 89, 172);
+  width: 128px;
+  height: 32px;
+  text-decoration: none;
+}
 
+.navlink:hover{
+  background: rgb(0, 70, 136);
+  width: 128px;
+  height: 32px;
+}
 /* //////////////////LIST LIST LIST //////////////////////////////// */
 
 
@@ -72,6 +93,12 @@ code:after {
 .UnitContainer{
   display: flex;
   justify-content: space-evenly;
+  border: 2px solid black;
+}
+.counterUnit{
+  display: flex;
+  background: gray;
+  height: 150px;
   border: 2px solid black;
 }
 
@@ -121,32 +148,31 @@ code:after {
 
 /* ///////////////////////////////////// */
 
-.Searchbarholder{
+/* .Searchbarholder{
   background: black;
-}
+} */
 
 .Searchtext{
   color: white;
 
 }
 
-.Searchbar{
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),*/
+/* .Searchbar{
   background-image:url('./images/StarCraft_II_Logo.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   height: 200px; 
-}
+} */
 
 .Searchbar2{
-  border: 2px solid red;
   display: flex;
   /* padding-top: 3rem; */
   padding:3rem 2rem 0;
 }
 
 .ImageProtoss{
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), */
   background-image:url('./images/StarCraft_II_Protoss.jpg');
   background-size: contain;
   background-position: center;
