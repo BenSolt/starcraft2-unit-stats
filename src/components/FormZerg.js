@@ -37,7 +37,7 @@ function FormZerg(props) {
                 <div className="Searchbarholder" >
                     <div className="ImageZerg" >
                         <div className='Searchbar2'>
-                            <h1 className='Searchtext'>ZERG</h1>
+                            <h3 className='Searchtext'>ZERG</h3>
                             <SearchFilter filter={filter} onFilterChange={handleFilterChange} />
                         </div>
                     </div>

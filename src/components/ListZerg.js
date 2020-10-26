@@ -9,37 +9,37 @@ function ListZerg(props) {
                     return (
                         <div  className='UnitContainer'>
                             <div>
-                                <h3 className='name'>{a.name}</h3>
+                                <h4 className='name'>{a.name}</h4>
                                 <img className='image2' alt='unit' src={a.image}></img>
         
                             </div>
 
-                            <div className='h3gray2'>
-                                <h3>{a.supply}</h3>
+                            <div className='h4gray2'>
+                                <h4>{a.supply}</h4>
                             </div>   
                           
-                            <div className='h3gray2'>
-                                <h3>{a.minerals}</h3>
+                            <div className='h4gray2'>
+                                <h4>{a.minerals}</h4>
                             </div> 
                             
-                            <div className='h3gray2'>
-                                <h3>{a.gas}</h3>
+                            <div className='h4gray2'>
+                                <h4>{a.gas}</h4>
                             </div>
 
-                            <div className='h3gray2'>
-                                <h3>{a.health}</h3>
+                            <div className='h4gray2'>
+                                <h4>{a.health}</h4>
                             </div>
 
-                            <div className='h3gray2'>
-                                <h3>{a.groundAttack}</h3>
+                            <div className='h4gray2'>
+                                <h4>{a.groundAttack}</h4>
                             </div>
 
-                            <div className='h3gray2'>
-                                <h3>{a.airAttack}</h3>
+                            <div className='h4gray2'>
+                                <h4>{a.airAttack}</h4>
                             </div> 
 
-                            <div className='h3gray2'>
-                                <h3>{a.bonus}</h3>
+                            <div className='h4gray2'>
+                                <h4>{a.bonus}</h4>
                             </div>
                         </div>
                     )

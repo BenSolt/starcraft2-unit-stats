@@ -10,25 +10,16 @@ function List(props) {
 
 
 
-    const hideShield = a => { 
-        var x = document.getElementById("a");
-        if (x.style.display === 'block'){
-            x.style.display = 'none';
-        } else {
-            x.style.display = 'block';
-        }
-      }
-
 
     return (
         <div className='UnitContainer'>
             {/* <button onClick={hideShield}>Hide</button> */}
             <div className='TextHeader'>
-                <h3>UNIT</h3>
+                <h4>UNIT</h4>
             </div>
 
             <div className='TextHeader'>
-                <h3>SUPPLY</h3>
+                <h4>SUPPLY</h4>
             </div>
 
             <div className='TextHeader'>
@@ -40,25 +31,25 @@ function List(props) {
             </div>
 
             <div className='TextHeader'>
-                <h3>HEALTH</h3>
+                <h4>HEALTH</h4>
             </div>
 
-{/* HIDE for Terran/ZERG ???????? */}
+
             <div id='a' className='TextHeaderShield'>
-                <h3>SHIELD</h3>
-            </div>
-{/* //////////////////////////////// */}
-
-            <div className='TextHeader'>
-                <h3>GROUND ATTACK</h3>
+                <h4>SHIELD</h4>
             </div>
 
+
             <div className='TextHeader'>
-                <h3>AIR ATTACK</h3>
+                <h4>GROUND ATTACK</h4>
             </div>
 
             <div className='TextHeader'>
-                <h3>BONUS</h3>
+                <h4>AIR ATTACK</h4>
+            </div>
+
+            <div className='TextHeader'>
+                <h4>BONUS</h4>
             </div>
 
         </div>

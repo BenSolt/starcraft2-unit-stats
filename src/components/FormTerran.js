@@ -21,9 +21,6 @@ function FormTerran(props) {
     const [filteredData, setFilteredData] = useState(Terran);
     const [filter, setFilter] = useState("");
 
-    const [hide, setHide] = useState(true); 
-    
-
     function handleFilterChange(f) {
         const fd = Terran.filter(r => {
             return r.name.toLowerCase().includes(f.toLowerCase());
@@ -32,9 +29,6 @@ function FormTerran(props) {
         setFilter(f);
     }
 
-
-
-
     return (
         <div>
 
@@ -42,13 +36,13 @@ function FormTerran(props) {
                 <div className="Searchbarholder" >
                     <div className="ImageTerran" >
                         <div className='Searchbar2'>
-                            <h1 className='Searchtext'>TERRAN</h1>
+                            <h3 className='Searchtext'>TERRAN</h3>
                             <SearchFilter filter={filter} onFilterChange={handleFilterChange} />
                         </div>
                     </div>
                 </div>
 
-                <ListHeader/>
+                {/* <ListHeader/> */}
 
                 <ListTerran filteredData1={filteredData}/>
 

@@ -97,6 +97,7 @@ code:after {
 }
 
 .UnitContainer{
+  padding-top: 25px;
   display: flex;
   justify-content: space-evenly;
   border: 2px solid black;
@@ -155,12 +156,12 @@ code:after {
 }
 
 .TextHeader{
-  width: 120px;
+  width: 5px;
   text-decoration: underline;
 }
 
 .TextHeaderShield{
-  width: 120px;
+  width: 5px;
   text-decoration: underline;
 }
 
@@ -195,7 +196,7 @@ code:after {
 .Searchbar2{
   align-items: center;
   display: flex;
-  padding:3rem 2rem 0;
+  padding:5rem 2rem 0;
 }
 
 /* .ImageHome{ */
@@ -208,13 +209,14 @@ code:after {
 } */
 
 
-/* .ImageProtoss{ */
-  /* background-image:url('./images/StarCraft_II_Protoss.jpg');
+/* .ImageProtoss1{ 
+  background-image:url('./images/StarCraft_II_Protoss.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   height: 180px; 
 } */
+
 
 /* .ImageTerran{
   background-image:url('./images/StarCraft_II_Terran.jpg');
@@ -230,7 +232,7 @@ code:after {
   background-position: center;
   background-repeat: no-repeat;
   height: 180px; 
-} */
+} 
 
 
 /* /////////////////////////////////// */

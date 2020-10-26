@@ -37,9 +37,9 @@ function FormProtoss(props) {
 
             <div>
                 <div className="Searchbarholder" >
-                    <div className="ImageProtoss" >
+                    <div className="ImageProtoss1" >
                         <div className='Searchbar2'>
-                            <h1 className='Searchtext'>PROTOSS</h1>
+                            <h3 className='Searchtext'>PROTOSS</h3>
                             <SearchFilter filter={filter} onFilterChange={handleFilterChange} />
                         </div>
                     </div>
