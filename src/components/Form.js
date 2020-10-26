@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-// import axios from "axios";
-
-import SearchFilter from './SearchFilter';
-import ListHeader from './ListHeader';
 
 import {Protoss} from './DataProtoss';
+
+
 
 function Form(props) {
 
@@ -29,8 +27,8 @@ function Form(props) {
     }
 
     return (
-        <div>
-
+        <div className='ImageHome'>
+            
             <div>
                 <div className="Searchbarholder" >
                     <div className="Searchbar" >

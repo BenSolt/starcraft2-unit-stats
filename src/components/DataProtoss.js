@@ -33,7 +33,10 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
             shield: 20,
             groundAttack: 5,
             airAttack: 0,
-            bonus: 0
+            bonus: 0,
+
+            type: 'Light',
+            counter:' Drone, Probe, SCV, marine'
         },
 
         {
@@ -89,7 +92,10 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
             shield: 70,
             groundAttack: 1,
             airAttack: 1,
-            bonus: '+'+ 12 + 'Light'
+            bonus: '+'+ 12 + 'Light',
+
+            type: 'Light',
+            counter:' Drone, Probe, SCV, marine'
         },
 
         {
@@ -289,6 +295,17 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
         }
     ]
     
+
+    const ProtossCounter = [
+        {
+            
+            id: 5,
+            type: 'Light',
+            counter:'Probe'
+        }
+    ]
+
 export {
-    Protoss
+    Protoss,
+    ProtossCounter
 }

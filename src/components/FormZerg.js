@@ -43,7 +43,7 @@ function FormZerg(props) {
                     </div>
                 </div>
 
-                <ListHeader/>
+                {/* <ListHeader/> */}
 
                 <ListZerg filteredData1={filteredData}/>
 

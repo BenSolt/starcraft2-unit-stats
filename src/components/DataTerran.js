@@ -1,28 +1,29 @@
-import Img_Probe from "../images/Icon_Protoss_Probe.jpg";
-import Img_Zealot from "../images/Icon_Protoss_Zealot.jpg";
-import Img_Sentry from "../images/Icon_Protoss_Sentry.jpg";
-import Img_Stalker from "../images/Icon_Protoss_Stalker.jpg";
-import Img_Adept from "../images/Icon_Protoss_Adept.jpg";
-import Img_Archon from "../images/Icon_Protoss_Archon.jpg";
-import Img_Carrier from "../images/Icon_Protoss_Carrier.jpg";
-import Img_Colossus from "../images/Icon_Protoss_Colossus.jpg";
-import Img_DarkTemplar from "../images/Icon_Protoss_Dark_Templar.jpg";
-import Img_Disruptor from "../images/Icon_Protoss_Disruptor.jpg";
-import Img_HighTemplar from "../images/Icon_Protoss_High_Templar.jpg";
-import Img_Immortal from "../images/Icon_Protoss_Immortal.jpg";
-import Img_Mothership from "../images/Icon_Protoss_Mothership.jpg";
-import Img_Observer from "../images/Icon_Protoss_Observer.jpg";
-import Img_Oracle from "../images/Icon_Protoss_Oracle.jpg";
-import Img_Phoenix from "../images/Icon_Protoss_Phoenix.jpg";
-import Img_Tempest from "../images/Icon_Protoss_Tempest.jpg";
-import Img_WarpPrism from "../images/Icon_Protoss_Warp_Prism.jpg";
-import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
+import Img_SCV from "../images/SCV_SC2_Icon1.jpg";
+import Img_Mule from "../images/MULE_SC2_Icon1.jpg";
+import Img_Marine from "../images/Marine_SC2_Icon1.jpg";
+import Img_Marauder from "../images/Marauder_SC2_Icon1.jpg";
+import Img_Reaper from "../images/Reaper_SC2_Icon1.jpg";
+import Img_Ghost from "../images/Ghost_SC2_Icon1.jpg";
+import Img_Hellion from "../images/Hellion_SC2_Icon1.jpg";
+import Img_Hellbat from "../images/Hellbat_SC2-HotS_Icon1.jpg";
+import Img_WidowMine from "../images/WidowMine_SC2-HotS_Icon1.jpg";
+import Img_SiegeTank from "../images/SiegeTank_SC2_Icon1.jpg";
+import Img_Cyclone from "../images/Cyclone_SC2-LotV_Icon1.jpg";
+import Img_Thor from "../images/Thor_SC2_Icon1.jpg";
+import Img_Viking from "../images/Viking_SC2_Icon1.jpg";
+import Img_Medivac from "../images/Medivac_SC2_Icon1.jpg";
+import Img_Liberator from "../images/Liberator_SC2-LotV_Icon1.jpg";
+import Img_Banshee from "../images/Banshee_SC2_Icon1.jpg";
+import Img_Raven from "../images/Raven_SC2_Icon1.jpg";
+import Img_Battlecruiser from "../images/Battlecruiser_SC2_Icon1.jpg";
+import Img_MissleTurret from "../images/MissileTurret_SC2_Icon1.jpg";
 
 const Terran = [
 
     {
+        id: 1,
         name: "SCV",
-        image: Img_Probe,
+        image: Img_SCV,
         supply: 1,
         minerals: 50,
         gas: 0,
@@ -32,9 +33,10 @@ const Terran = [
         bonus: 0
     },
 
-    {
+    {   
+        id: 2,
         name: "MULE",
-        image: Img_Zealot,
+        image: Img_Mule,
         supply: 0,
         minerals: 0,
         gas: 0,
@@ -45,8 +47,9 @@ const Terran = [
     },
 
     {
+        id: 3,
         name: "MARINE",
-        image: Img_Sentry,
+        image: Img_Marine,
         supply: 1,
         minerals: 50,
         gas: 0,
@@ -57,8 +60,9 @@ const Terran = [
     },
 
     {
+        id: 4,
         name: "Marauder",
-        image: Img_Stalker,
+        image: Img_Marauder,
         supply: 2,
         minerals: 100,
         gas: 25,
@@ -69,8 +73,9 @@ const Terran = [
     },
 
     {
+        id: 5,
         name: "Reaper",
-        image: Img_Adept,
+        image: Img_Reaper,
         supply: 1,
         minerals: 50,
         gas: 50,
@@ -81,8 +86,9 @@ const Terran = [
     },
 
     {
+        id: 6,
         name: "Ghost",
-        image: Img_HighTemplar,
+        image: Img_Ghost,
         supply: 2,
         minerals: 150,
         gas: 125,
@@ -93,8 +99,9 @@ const Terran = [
     },
 
     {
+        id: 7,
         name: "Hellion",
-        image: Img_DarkTemplar,
+        image: Img_Hellion,
         supply: 2,
         minerals: 100,
         gas: 0,
@@ -105,8 +112,9 @@ const Terran = [
     },
 
     {
+        id: 8,
         name: "Hellbat",
-        image: Img_Archon,
+        image: Img_Hellbat,
         supply: 2,
         minerals: 100,
         gas: 0,
@@ -117,8 +125,9 @@ const Terran = [
     },
 
     {
+        id: 9,
         name: "Widow Mine",
-        image: Img_Observer,
+        image: Img_WidowMine,
         supply: 2,
         minerals: 75,
         gas: 25,
@@ -129,8 +138,9 @@ const Terran = [
     },
 
     {
+        id: 10,
         name: "Siege Tank",
-        image: Img_Immortal,
+        image: Img_SiegeTank,
         supply: 3,
         minerals: 1,
         gas: 1,
@@ -141,8 +151,9 @@ const Terran = [
     },
 
     {
+        id: 11,
         name: "Cyclone",
-        image: Img_WarpPrism,
+        image: Img_Cyclone,
         supply: 3,
         minerals: 150,
         gas: 100,
@@ -153,8 +164,9 @@ const Terran = [
     },
 
     {
+        id: 12,
         name: "Thor",
-        image: Img_Colossus,
+        image: Img_Thor,
         supply: 6,
         minerals: 300,
         gas: 200,
@@ -165,8 +177,9 @@ const Terran = [
     },
 
     {
+        id: 13,
         name: "Viking",
-        image: Img_Disruptor,
+        image: Img_Viking,
         supply: 2,
         minerals: 150,
         gas: 75,
@@ -177,8 +190,9 @@ const Terran = [
     },
 
     {
+        id: 14,
         name: "Medivac",
-        image: Img_Phoenix,
+        image: Img_Medivac,
         supply: 2,
         minerals: 100,
         gas: 100,
@@ -189,8 +203,9 @@ const Terran = [
     },
 
     {
+        id: 15,
         name: "Liberator",
-        image: Img_Oracle,
+        image: Img_Liberator,
         supply: 3,
         minerals: 150,
         gas: 150,
@@ -201,8 +216,9 @@ const Terran = [
     },
 
     {
+        id: 16,
         name: "Banshee",
-        image: Img_VoidRay,
+        image: Img_Banshee,
         supply: 3,
         minerals: 150,
         gas: 100,
@@ -213,8 +229,9 @@ const Terran = [
     },
 
     {
+        id: 17,
         name: "Raven",
-        image: Img_Tempest,
+        image: Img_Raven,
         supply: 2,
         minerals: 100,
         gas: 200,
@@ -225,8 +242,9 @@ const Terran = [
     },
 
     {
+        id: 18,
         name: "Battlecruiser",
-        image: Img_Carrier,
+        image: Img_Battlecruiser,
         supply: 6,
         minerals: 400,
         gas: 300,
@@ -237,8 +255,9 @@ const Terran = [
     },
 
     {
+        id: 19,
         name: "Missle Turret",
-        image: Img_Mothership,
+        image: Img_MissleTurret,
         supply: 0,
         minerals: 100,
         gas: 0,

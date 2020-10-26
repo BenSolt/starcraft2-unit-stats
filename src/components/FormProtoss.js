@@ -7,6 +7,7 @@ import ListHeader from './ListHeader';
 import ListProtoss from './ListProtoss';
 
 import {Protoss} from './DataProtoss';
+import {ProtossCounter} from './DataProtoss';
 
 function FormProtoss(props) {
 
@@ -19,6 +20,7 @@ function FormProtoss(props) {
     // ]
 
     const [filteredData, setFilteredData] = useState(Protoss);
+    const [counter, setCounter] = useState(ProtossCounter);
     const [filter, setFilter] = useState("");
     
 
@@ -43,9 +45,9 @@ function FormProtoss(props) {
                     </div>
                 </div>
 
-                <ListHeader/>
+                {/* <ListHeader/> */}
 
-                <ListProtoss  filteredData1={filteredData}/>
+                <ListProtoss  counterData={counter} filteredData1={filteredData}/>
 
 
             </div>

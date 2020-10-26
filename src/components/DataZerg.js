@@ -1,28 +1,31 @@
-import Img_Probe from "../images/Icon_Protoss_Probe.jpg";
-import Img_Zealot from "../images/Icon_Protoss_Zealot.jpg";
-import Img_Sentry from "../images/Icon_Protoss_Sentry.jpg";
-import Img_Stalker from "../images/Icon_Protoss_Stalker.jpg";
-import Img_Adept from "../images/Icon_Protoss_Adept.jpg";
-import Img_Archon from "../images/Icon_Protoss_Archon.jpg";
-import Img_Carrier from "../images/Icon_Protoss_Carrier.jpg";
-import Img_Colossus from "../images/Icon_Protoss_Colossus.jpg";
-import Img_DarkTemplar from "../images/Icon_Protoss_Dark_Templar.jpg";
-import Img_Disruptor from "../images/Icon_Protoss_Disruptor.jpg";
-import Img_HighTemplar from "../images/Icon_Protoss_High_Templar.jpg";
-import Img_Immortal from "../images/Icon_Protoss_Immortal.jpg";
-import Img_Mothership from "../images/Icon_Protoss_Mothership.jpg";
-import Img_Observer from "../images/Icon_Protoss_Observer.jpg";
-import Img_Oracle from "../images/Icon_Protoss_Oracle.jpg";
-import Img_Phoenix from "../images/Icon_Protoss_Phoenix.jpg";
-import Img_Tempest from "../images/Icon_Protoss_Tempest.jpg";
-import Img_WarpPrism from "../images/Icon_Protoss_Warp_Prism.jpg";
-import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
+import Img_Larva from "../images/Icon_Zerg_Larva.jpg";
+import Img_Drone from "../images/Icon_Zerg_Drone.jpg";
+import Img_Queen from "../images/Icon_Zerg_Queen.jpg";
+import Img_Zergling from "../images/Icon_Zerg_Zergling.jpg";
+import Img_Baneling from "../images/Icon_Zerg_Baneling.jpg";
+import Img_Roach from "../images/Icon_Zerg_Roach.jpg";
+import Img_Ravager from "../images/Icon_Zerg_Ravager.jpg";
+import Img_Hydralisk from "../images/Icon_Zerg_Hydralisk.jpg";
+import Img_Lurker from "../images/Icon_Zerg_Lurker.jpg";
+import Img_Infestor from "../images/Icon_Zerg_Infestor.jpg";
+import Img_SwarmHost from "../images/Icon_Zerg_Swarm_Host.jpg";
+// import Img_Locust from "../images/Icon_Zerg_Locust.jpg";
+import Img_Ultralisk from "../images/Icon_Zerg_Ultralisk.jpg";
+import Img_Overlord from "../images/Icon_Zerg_Overlord.jpg";
+import Img_Overseer from "../images/Icon_Zerg_Overseer.jpg";
+import Img_Mutalisk from "../images/Icon_Zerg_Mutalisk.jpg";
+import Img_Corruptor from "../images/Icon_Zerg_Corruptor.jpg";
+import Img_Viper from "../images/Icon_Zerg_Viper.jpg";
+import Img_BroodLord from "../images/Icon_Zerg_Brood_Lord.jpg";
+import Img_SpineCrawler from "../images/Icon_Zerg_Spine_Crawler.jpg";
+import Img_SporeCrawler from "../images/Icon_Zerg_Spore_Crawler.jpg";
 
 const Zerg = [
 
     {
+        id: 1,
         name: "Larva",
-        image: Img_Probe,
+        image: Img_Larva,
         supply: 0,
         minerals: 0,
         gas: 0,
@@ -33,8 +36,9 @@ const Zerg = [
     },
 
     {
+        id: 2,
         name: "Drone",
-        image: Img_Zealot,
+        image: Img_Drone,
         supply: 1,
         minerals: 50,
         gas: 0,
@@ -45,8 +49,9 @@ const Zerg = [
     },
 
     {
+        id: 3,
         name: "Queen",
-        image: Img_Sentry,
+        image: Img_Queen,
         supply: 2,
         minerals: 150,
         gas: 0,
@@ -57,8 +62,9 @@ const Zerg = [
     },
 
     {
+        id: 4,
         name: "Zergling",
-        image: Img_Stalker,
+        image: Img_Zergling,
         supply: 0.5,
         minerals: 125,
         gas: 50,
@@ -69,8 +75,9 @@ const Zerg = [
     },
 
     {
+        id: 5,
         name: "Baneling",
-        image: Img_Adept,
+        image: Img_Baneling,
         supply: 0.5,
         minerals: 25,
         gas: 25,
@@ -81,8 +88,9 @@ const Zerg = [
     },
 
     {
+        id: 6,
         name: "Roach",
-        image: Img_HighTemplar,
+        image: Img_Roach,
         supply: 2,
         minerals: 75,
         gas: 25,
@@ -93,8 +101,9 @@ const Zerg = [
     },
 
     {
+        id: 7,
         name: "Ravager",
-        image: Img_DarkTemplar,
+        image: Img_Ravager,
         supply: 3,
         minerals: 25,
         gas: 75,
@@ -105,8 +114,9 @@ const Zerg = [
     },
 
     {
+        id: 8,
         name: "Hydralisk",
-        image: Img_Archon,
+        image: Img_Hydralisk,
         supply: 2,
         minerals: 100,
         gas: 50,
@@ -117,8 +127,9 @@ const Zerg = [
     },
 
     {
+        id: 9,
         name: "Lurker",
-        image: Img_Observer,
+        image: Img_Lurker,
         supply: 3,
         minerals: 50,
         gas: 100,
@@ -129,8 +140,9 @@ const Zerg = [
     },
 
     {
+        id: 10,
         name: "Infestor",
-        image: Img_Immortal,
+        image: Img_Infestor,
         supply: 2,
         minerals: 100,
         gas: 150,
@@ -141,32 +153,35 @@ const Zerg = [
     },
 
     {
+        id: 11,
         name: "Swarm Host",
-        image: Img_WarpPrism,
+        image: Img_SwarmHost,
         supply: 3,
         minerals: 100,
         gas: 75,
         health: 160,
-        groundAttack: 0,
+        groundAttack: 'Locust: '+ 10,
         airAttack: 0,
         bonus: 0
     },
 
-    {
-        name: "Locust",
-        image: Img_WarpPrism,
-        supply: 0,
-        minerals: 0,
-        gas: 0,
-        health: 50,
-        groundAttack: 10,
-        airAttack: 0,
-        bonus: 0
-    },
+    // {
+    //     id: 12,
+    //     name: "Locust",
+    //     image: Img_Locust,
+    //     supply: 0,
+    //     minerals: 0,
+    //     gas: 0,
+    //     health: 50,
+    //     groundAttack: 10,
+    //     airAttack: 0,
+    //     bonus: 0
+    // },
 
     {
+        id: 13,
         name: "Ultralisk",
-        image: Img_Colossus,
+        image: Img_Ultralisk,
         supply: 6,
         minerals: 300,
         gas: 200,
@@ -177,8 +192,9 @@ const Zerg = [
     },
 
     {
+        id: 14,
         name: "Overlord",
-        image: Img_Disruptor,
+        image: Img_Overlord,
         supply: 0,
         minerals: 100,
         gas: 0,
@@ -189,8 +205,9 @@ const Zerg = [
     },
 
     {
+        id: 15,
         name: "Overseer",
-        image: Img_Phoenix,
+        image: Img_Overseer,
         supply: 0,
         minerals: 50,
         gas: 50,
@@ -201,8 +218,9 @@ const Zerg = [
     },
 
     {
+        id: 16,
         name: "Mutalisk",
-        image: Img_Oracle,
+        image: Img_Mutalisk,
         supply: 2,
         minerals: 100,
         gas: 100,
@@ -213,8 +231,9 @@ const Zerg = [
     },
 
     {
+        id: 17,
         name: "Corruptor",
-        image: Img_VoidRay,
+        image: Img_Corruptor,
         supply: 2,
         minerals: 150,
         gas: 100,
@@ -225,8 +244,9 @@ const Zerg = [
     },
 
     {
+        id: 18,
         name: "Viper",
-        image: Img_Tempest,
+        image: Img_Viper,
         supply: 3,
         minerals: 100,
         gas: 200,
@@ -237,8 +257,9 @@ const Zerg = [
     },
 
     {
+        id: 19,
         name: "Brood Lord",
-        image: Img_Carrier,
+        image: Img_BroodLord,
         supply: 4,
         minerals: 150,
         gas: 150,
@@ -249,8 +270,9 @@ const Zerg = [
     },
 
     {
+        id: 20,
         name: "Spine Crawler",
-        image: Img_Mothership,
+        image: Img_SpineCrawler,
         supply: 0,
         minerals: 100,
         gas: 0,
@@ -261,8 +283,9 @@ const Zerg = [
     },
 
     {
+        id: 21,
         name: "Spore Crawler",
-        image: Img_Mothership,
+        image: Img_SporeCrawler,
         supply: 0,
         minerals: 75,
         gas: 0,

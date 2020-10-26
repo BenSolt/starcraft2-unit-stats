@@ -20,6 +20,8 @@ function FormTerran(props) {
 
     const [filteredData, setFilteredData] = useState(Terran);
     const [filter, setFilter] = useState("");
+
+    const [hide, setHide] = useState(true); 
     
 
     function handleFilterChange(f) {
@@ -29,6 +31,9 @@ function FormTerran(props) {
         setFilteredData(fd);
         setFilter(f);
     }
+
+
+
 
     return (
         <div>

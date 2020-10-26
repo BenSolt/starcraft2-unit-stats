@@ -9,14 +9,16 @@ import FormProtoss from './components/FormProtoss';
 import FormTerran from './components/FormTerran';
 import FormZerg from './components/FormZerg';
 
-function App() {
+
+
+function App(props) {
 
   return (
     <div>
-      <Navbar/>
-      <Route exact path="/" component={Form}/>
+      <Navbar />
+      <Route exact path="/"  component={Form}/>
       <Route path="/protoss" component={FormProtoss} />
-      <Route path="/terran" component={FormTerran} />
+      <Route path="/terran" component={FormTerran}/>
       <Route path="/zerg" component={FormZerg} />
 
     </div>

@@ -11,9 +11,7 @@ function ListZerg(props) {
                             <div>
                                 <h3 className='name'>{a.name}</h3>
                                 <img className='image2' alt='unit' src={a.image}></img>
-                                <form >
-                                <input  className='Checkbox1' type="checkbox"/>
-                                </form>                          
+        
                             </div>
 
                             <div className='h3gray2'>
@@ -30,10 +28,6 @@ function ListZerg(props) {
 
                             <div className='h3gray2'>
                                 <h3>{a.health}</h3>
-                            </div>
-
-                            <div className='h3gray2'>
-                                <h3>{a.shield}</h3>
                             </div>
 
                             <div className='h3gray2'>

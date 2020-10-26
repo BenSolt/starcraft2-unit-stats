@@ -1,14 +1,28 @@
 import React from "react";
 
-
 import Img_mineral from "../images/minerals.jpg";
 import Img_gas from "../images/Gas.jpg";
+import { NavLink } from "react-router-dom";
+
+
 
 function List(props) {
 
 
+
+    const hideShield = a => { 
+        var x = document.getElementById("a");
+        if (x.style.display === 'block'){
+            x.style.display = 'none';
+        } else {
+            x.style.display = 'block';
+        }
+      }
+
+
     return (
         <div className='UnitContainer'>
+            {/* <button onClick={hideShield}>Hide</button> */}
             <div className='TextHeader'>
                 <h3>UNIT</h3>
             </div>
@@ -18,12 +32,10 @@ function List(props) {
             </div>
 
             <div className='TextHeader'>
-                {/* <h3>MINERALS</h3> */}
                 <img className='image1' alt='minerals' src={Img_mineral} />
             </div>
 
             <div className='TextHeader'>
-                {/* <h3>GAS</h3> */}
                 <img className='image1' alt='gas' src={Img_gas} />
             </div>
 
@@ -31,9 +43,11 @@ function List(props) {
                 <h3>HEALTH</h3>
             </div>
 
-            <div className='TextHeader'>
+{/* HIDE for Terran/ZERG ???????? */}
+            <div id='a' className='TextHeaderShield'>
                 <h3>SHIELD</h3>
             </div>
+{/* //////////////////////////////// */}
 
             <div className='TextHeader'>
                 <h3>GROUND ATTACK</h3>

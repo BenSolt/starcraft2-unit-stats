@@ -14,6 +14,7 @@ function ListProtoss(props) {
       }
 
       function toggleInfo() {
+        
         var x = document.getElementById("myDIV");
        
         if (x.style.display === 'block'){
@@ -24,30 +25,68 @@ function ListProtoss(props) {
       }
 
 
-        const [recipeToEdit, setRecipeToEdit] = useState(props.filteredData1);
-        const [editing, setEditing] = useState(false); 
+        const [unit, setUnit] = useState(props.filteredData1);
+        const [editing, setEditing] = useState(true); 
+        //false
 
 
-        const editRecipe = e => {    
+        const editRecipe = unit => {    
             setEditing(true);
-            // setRecipeToEdit(e);
+            setUnit(unit);
         };
 
   
 
     return (
-            <div>
+        
+            <div >
+                {editing && (
+                        <div className="CounterFormHolder">
+                            
+                            <h1>
+                            {unit.name} 
+                            <img className='image2' alt='unit' src={unit.image}/>
+                            </h1>
+                            <h3 className='textspacing'>{unit.type}</h3>
+                            <h4 className='textspacing'>{unit.counter}</h4>
+                            <div className='Btnholder'>
+                            <button className="BtnEditCancel" onClick={() => setEditing(false)}>cancel</button>
+                            </div>
+                            {/* <div className="CounterForm">
+                          
+                                <h3 className='textspacing'>{unit.type}</h3>
+                                <h4 className='textspacing'>{unit.counter}</h4>
+                               
+                                <div>
+                                    <button className="BtnEditCancel" onClick={() => setEditing(false)}>cancel</button>
+                                </div>
+                            </div> */}
+                            
+                            {/* {props.counterData.map(a => (
+                                <div  key={a.id} className="CounterForm">
+                                    <h5 className='name'>{a.type}</h5>
+                                    <h5 className='name'>{a.counter}</h5>
+                                </div>
+                            ))} */}
+                                {/* <div>
+                                    <button className="BtnEditCancel" onClick={() => setEditing(false)}>cancel</button>
+                                </div> */}
+                          
+                        </div>
+                    
+                )}
+
                 {props.filteredData1.map(a => (
                     <div key={a.id} >
                         <div  className='UnitContainer'>
                             
-                            <div>
+                            <div className='ccc'>
                                 <h3 className='name'>{a.name}</h3>
                                 <img className='image2' alt='unit' src={a.image}></img>
-                                <button onClick={() => editRecipe(a)}>Click Me1</button>
-                                <button className="BtnEditCancel" onClick={() => setEditing(false)}>Cancel</button>
+                                <button className="Btn" onClick={() => editRecipe(a)}>Show</button>
+                                <button className="Btn" onClick={() => setEditing(false)}>Hide</button>
 
-                                {/* <button onClick={toggleInfo}>Click Me2</button> 
+                                {/* <button onClick={toggleInfo}>Toggle</button> 
 
                                 <div className='info' id="myDIV">
                                 This is my DIV element.
@@ -71,7 +110,7 @@ function ListProtoss(props) {
                                 <h3>{a.health}</h3>
                             </div>
 
-                            <div className='h3gray2'>
+                            <div className='h3shield'>
                                 <h3>{a.shield}</h3>
                             </div>
 
@@ -86,21 +125,10 @@ function ListProtoss(props) {
                             <div className='h3gray2'>
                                 <h3>{a.bonus}</h3>
                             </div>
-                        
                         </div> 
 
-                        {editing && (
-                            <div>
-                                <div className='counterUnit'> Checkbox is check</div>
-                                <h3 className='name'>{a.name}</h3>
-                            </div>
-                            )}
-
-
                     </div>
-                    )
-                )}
-
+                ))}
             </div>
     );
 }
