@@ -3,11 +3,11 @@ import React, { useState } from "react";
 
 import SearchFilter from './SearchFilter';
 
-import ListHeader from './ListHeader';
+import ListHeader from './navbar/ListHeader';
 import ListProtoss from './ListProtoss';
 
 import {Protoss} from './DataProtoss';
-import {ProtossCounter} from './DataProtoss';
+// import {ProtossCounter} from './DataProtoss';
 
 function FormProtoss(props) {
 
@@ -20,7 +20,7 @@ function FormProtoss(props) {
     // ]
 
     const [filteredData, setFilteredData] = useState(Protoss);
-    const [counter, setCounter] = useState(ProtossCounter);
+    // const [counter, setCounter] = useState(ProtossCounter);
     const [filter, setFilter] = useState("");
     
 
@@ -35,9 +35,10 @@ function FormProtoss(props) {
     return (
         <div>
 
-            <div>
-                <div className="Searchbarholder" >
-                    <div className="ImageProtoss1" >
+        
+            <div className="ImageProtoss">
+                <div className="Searchbarholder">
+                    <div>
                         <div className='Searchbar2'>
                             <h3 className='Searchtext'>PROTOSS</h3>
                             <SearchFilter filter={filter} onFilterChange={handleFilterChange} />
@@ -47,7 +48,7 @@ function FormProtoss(props) {
 
                 {/* <ListHeader/> */}
 
-                <ListProtoss  counterData={counter} filteredData1={filteredData}/>
+                <ListProtoss filteredData1={filteredData}/>
 
 
             </div>

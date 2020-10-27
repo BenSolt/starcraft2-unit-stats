@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 import SearchFilter from './SearchFilter';
 
-import ListHeader from './ListHeader';
+import ListHeader from './navbar/ListHeader';
 import ListZerg from "./ListZerg";
 
 import {Zerg} from './DataZerg';
@@ -33,9 +33,9 @@ function FormZerg(props) {
     return (
         <div>
 
-            <div>
+            <div  className="ImageZerg">
                 <div className="Searchbarholder" >
-                    <div className="ImageZerg" >
+                    <div>
                         <div className='Searchbar2'>
                             <h3 className='Searchtext'>ZERG</h3>
                             <SearchFilter filter={filter} onFilterChange={handleFilterChange} />

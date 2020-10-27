@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import { NavLink } from "react-router-dom";
 // import {useDarkMode} from '../hooks/useDarkMode';
 
 import ListHeader from './ListHeader';
+
 
 function Navbar(props) {
 
@@ -12,10 +13,15 @@ function Navbar(props) {
     //   setDarkMode(!darkMode);
     // }
 
+    // const hidebar = a => { 
+    //     var x = document.getElementById("header");
+    //     return(x.style.display = 'none');
+    //   }
 
     const hideShield = a => { 
         var x = document.getElementById("a");
         return(x.style.display = 'none');
+
       }
 
     const showShield = a => { 
@@ -23,19 +29,27 @@ function Navbar(props) {
       return(x.style.display = 'block');
     }
 
-
     return(
         
     <div className='Navbarholder'>
+
+
+
             
             <nav className='Navlinkholder'>
                
+                {/* <NavLink className='navlink' to='/'>HOME</NavLink>
+                <NavLink className='navlink' to='/terran'>TERRAN</NavLink>
+                <NavLink className='navlink' to='/protoss'>PROTOSS</NavLink>
+                <NavLink className='navlink' to='/zerg'>ZERG</NavLink> */}
+
                 <NavLink className='navlink' to='/'>HOME</NavLink>
                 <NavLink className='navlink' onClick={hideShield} to='/terran'>TERRAN</NavLink>
                 <NavLink className='navlink' onClick={showShield} to='/protoss'>PROTOSS</NavLink>
-                <NavLink className='navlink' onClick={hideShield} to='/zerg'>ZERG</NavLink>
+                <NavLink className='navlink' onClick={hideShield} to='/zerg'>ZERG</NavLink> 
                 
             </nav> 
+            
             <ListHeader/>
 
             {/* <div className="NavbarholderDark">

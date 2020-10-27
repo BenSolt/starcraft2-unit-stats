@@ -1,5 +1,8 @@
 import React, {useState} from "react";
 
+import Img_mineral from "../images/minerals.jpg";
+import Img_gas from "../images/Gas.jpg";
+
 function ListProtoss(props) {
 
     function myFunction() {
@@ -26,8 +29,7 @@ function ListProtoss(props) {
 
 
         const [unit, setUnit] = useState(props.filteredData1);
-        const [editing, setEditing] = useState(true); 
-        //false
+        const [editing, setEditing] = useState(false); 
 
 
         const editRecipe = unit => {    
@@ -40,78 +42,51 @@ function ListProtoss(props) {
     return (
         
             <div>
+
                 {editing && (
-                        <div className="CounterFormHolder">
-                            
+                        <div className="Container2">
+                            <div className='UnitPortrait'>
                             <h3>{unit.name} </h3>
                             <img className='image2' alt='unit' src={unit.image}/>
-                           
+                            </div>
+
                             <h4 className='textspacing'>{unit.type}</h4>
                             <h4 className='textspacing'>{unit.counter}</h4>
                             <div className='Btnholder'>
                             <button className="BtnEditCancel" onClick={() => setEditing(false)}>cancel</button>
-                            </div>
-                            
-                            {/* {props.counterData.map(a => (
-                                <div  key={a.id} className="CounterForm">
-                                    <h5 className='name'>{a.type}</h5>
-                                    <h5 className='name'>{a.counter}</h5>
-                                </div>
-                            ))} */}
-                                {/* <div>
-                                    <button className="BtnEditCancel" onClick={() => setEditing(false)}>cancel</button>
-                                </div> */}
+                            </div>                      
                           
                         </div>
-                    
                 )}
 
+
+{/* /////////////////////////// PROTOSSS INFORMATION ///////////////////////////////////// */}
                 {props.filteredData1.map(a => (
-                    <div key={a.id} >
-                        <div  className='UnitContainer'>
-                              
-                            <div className='ccc'>
-                                <h4 className='name'>{a.name}</h4>
-                                <img className='image2' alt='unit' src={a.image}></img>
+                    <div key={a.id} className='Container'>
+       
+                        <div className='UnitPortrait'>
+                            <h4 className='name'>{a.name}</h4>
+                            <img className='image2' alt='unit' src={a.image}></img>
                                 
-                                <button className="Btn" onClick={() => editRecipe(a)}>Show</button>
-                                <button className="Btn" onClick={() => setEditing(false)}>Hide</button>
-
-                            </div>
-                        
-                            <div className='h4gray2'>
-                                <h4>{a.supply}</h4>
-                            </div>   
-                          
-                            <div className='h4gray2'>
-                                <h4>{a.minerals}</h4>
-                            </div> 
-                            
-                            <div className='h4gray2'>
-                                <h4>{a.gas}</h4>
-                            </div>
-
-                            <div className='h4gray2'>
-                                <h4>{a.health}</h4>
-                            </div>
-
-                            <div className='h4shield'>
-                                <h4>{a.shield}</h4>
-                            </div>
-
-                            <div className='h4gray2'>
-                                <h4>{a.groundAttack}</h4>
-                            </div>
-
-                            <div className='h4gray2'>
-                                <h4>{a.airAttack}</h4>
-                            </div> 
-
-                            <div className='h4gray2'>
-                                <h4>{a.bonus}</h4>
-                            </div>
-                        </div> 
-
+                            <button className="Btn" onClick={() => editRecipe(a)}>Show</button>
+                            <button className="Btn" onClick={() => setEditing(false)}>Hide</button> 
+                        </div>
+                    
+                        <h4 className='text'>{a.supply}</h4>
+                         
+                        <h4 className='text'>{a.minerals}</h4>
+                           
+                        <h4 className='text'>{a.gas}</h4>
+                           
+                        <h4 className='text'>{a.health}</h4>
+                           
+                        <h4 className='UnitShield'>{a.shield}</h4>
+                           
+                        <h4 className='text'>{a.groundAttack}</h4>
+                           
+                        <h4 className='text'>{a.airAttack}</h4>
+                           
+                        <h4 className='text'>{a.bonus}</h4>
                     </div>
                 ))}
             </div>

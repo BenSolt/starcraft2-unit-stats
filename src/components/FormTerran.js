@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 import SearchFilter from './SearchFilter';
 
-import ListHeader from './ListHeader';
+import ListHeader from './navbar/ListHeader';
 import ListTerran from "./ListTerran";
 
 import {Terran} from './DataTerran';
@@ -32,9 +32,9 @@ function FormTerran(props) {
     return (
         <div>
 
-            <div>
+            <div className='ImageTerran'>
                 <div className="Searchbarholder" >
-                    <div className="ImageTerran" >
+                    <div>
                         <div className='Searchbar2'>
                             <h3 className='Searchtext'>TERRAN</h3>
                             <SearchFilter filter={filter} onFilterChange={handleFilterChange} />
@@ -43,9 +43,8 @@ function FormTerran(props) {
                 </div>
 
                 {/* <ListHeader/> */}
-
+               
                 <ListTerran filteredData1={filteredData}/>
-
 
             </div>
         </div>

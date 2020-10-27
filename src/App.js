@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route } from "react-router-dom";
-import './App.css';
+import './App.scss';
 
-import Navbar from './components/Navbar';
-import Form from './components/Form';
+import Navbar from './components/navbar/Navbar';
+import Home from './components/Home';
 
 import FormProtoss from './components/FormProtoss';
 import FormTerran from './components/FormTerran';
@@ -16,7 +16,7 @@ function App(props) {
   return (
     <div>
       <Navbar />
-      <Route exact path="/"  component={Form}/>
+      <Route exact path="/"  component={Home}/>
       <Route path="/protoss" component={FormProtoss} />
       <Route path="/terran" component={FormTerran}/>
       <Route path="/zerg" component={FormZerg} />

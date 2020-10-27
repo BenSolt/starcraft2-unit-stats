@@ -20,8 +20,11 @@ h2 {
   margin-left: 5px;
 }
 
-h3 {
+h4 {
+  // padding: 0 12px 0;
+  // padding-top: 30px;
   text-align: center; 
+  color: white;
 }
 
 p {
@@ -89,24 +92,59 @@ code:after {
   width: 128px;
   padding: 10px;
 }
-/* //////////////////LIST LIST LIST //////////////////////////////// */
 
+/////////// HEADER BAR //////////////////////////////////////
+////////////////////////////////////////////////////////////
 
-.InfoBar{
-  display: flex; 
-}
-
-.UnitContainer{
-  padding-top: 25px;
+.Container{
+  padding-top: 20px;
   display: flex;
   justify-content: space-evenly;
   border: 2px solid black;
+  background: rgb(31, 31, 31);
+
+  .UnitPortrait{
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .image1{
+    padding: 20px;
+    width: 60px;
+    height: 60px;
+    // padding: 10px 25px 0;
+  }
+  
+  .image2{
+  // padding: 0 25px 0;
+  width: 76px;
+  height: 76px;
+  }
+
+  .text{
+    padding: 0 20px 0;
+    text-decoration: underline;
+  }
+
 }
 
-.ccc{
+////////////// END HEADER BAR ///////////////////////////////////
+
+.Container2{
+  padding-top: 20px;
   display: flex;
-  flex-direction: column; 
+  justify-content: space-evenly;
+  border: 2px solid black;
+
+  .UnitPortrait{
+    display: flex;
+    flex-direction: column; 
+  }
+
 }
+
+
+
 
 .Btn{
   margin: 4px 0 4px;
@@ -144,44 +182,29 @@ code:after {
   
 }
 
-.image1{
-  padding: 10px 25px 0;
 
-}
-
-.image2{
-  padding: 0 25px 0;
-  width: 76px;
-  height: 76px;
-}
-
-.TextHeader{
-  width: 5px;
-  text-decoration: underline;
-}
 
 .TextHeaderShield{
-  width: 5px;
+  /* width: 5px; */
   text-decoration: underline;
+  /* color: white; */
 }
 
 
-.h3gray2{
-  width: 120px;
-  padding: 25px 0 0;
-  /* background: gray; */
+.TextUnits{
+  display: flex;
+  /* width: 10px; */
+  /* padding: 25px 0 0; */
+  background: gray; 
+  border: 2px solid red;
 }
 
-.h3shield{
-  width: 120px;
-  padding: 25px 0 0;
+.UnitShield{
+  /* padding: 25px 25px 5px; */
   background: rgb(0, 162, 255);
 }
 
 
-.InputContainer{
-  margin: 15px;
-}
 
 .Input{
   border-radius: 5px;
@@ -196,44 +219,47 @@ code:after {
 .Searchbar2{
   align-items: center;
   display: flex;
-  padding:5rem 2rem 0;
+  padding:7rem 2rem 0;
+  background: rgb(31, 31, 31);
+
+  .Searchtext{
+    color: white;
+    padding-right: 15px;
+  }
+
 }
 
-/* .ImageHome{ */
+.ImageHome{ 
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), */
-  /* background-image:url('./images/StarCraft_II_Logo.jpg');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 180px; 
-} */
-
-
-/* .ImageProtoss1{ 
-  background-image:url('./images/StarCraft_II_Protoss.jpg');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 180px; 
-} */
-
-
-/* .ImageTerran{
-  background-image:url('./images/StarCraft_II_Terran.jpg');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 180px; 
-}
-
-.ImageZerg{
-  background-image:url('./images/StarCraft_II_Zerg.jpg');
+  background-image:url('./images/StarCraft_II_Logo.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   height: 180px; 
 } 
 
+.images{
+ width: 100%;
+}
+
+// .ImageProtoss{ 
+//   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+//   url('./images/StarCraft_II_Protoss.jpg');
+//   background-size: contain;
+//   background-repeat: no-repeat;
+// }
+
+// .ImageTerran{
+//   background-image:url('./images/StarCraft_II_Terran.jpg');
+//   background-size: contain;
+//   background-repeat: no-repeat;
+// }
+
+// .ImageZerg{
+//   background-image:url('./images/StarCraft_II_Zerg.jpg');
+//   background-size: contain;
+//   background-repeat: no-repeat;
+// } 
 
 /* /////////////////////////////////// */
 
