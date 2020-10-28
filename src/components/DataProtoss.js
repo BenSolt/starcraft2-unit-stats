@@ -35,7 +35,7 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
             airAttack: 0,
             bonus: 0,
 
-            type: 'Light',
+            type:' Light',
             counter:' Drone, Probe, SCV, marine'
         },
 
@@ -94,7 +94,7 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
             airAttack: 1,
             bonus: '+'+ 12 + 'Light',
 
-            type: 'Light',
+            type:' Light',
             counter:' Drone, Probe, SCV, marine'
         },
 

@@ -29,6 +29,12 @@ function Navbar(props) {
       return(x.style.display = 'block');
     }
 
+    const hideHeader = a => { 
+        var x = document.getElementById("header");
+        return(x.style.display = 'none');
+
+      }
+
     return(
         
     <div className='Navbarholder'>
@@ -37,11 +43,7 @@ function Navbar(props) {
 
             
             <nav className='Navlinkholder'>
-               
-                {/* <NavLink className='navlink' to='/'>HOME</NavLink>
-                <NavLink className='navlink' to='/terran'>TERRAN</NavLink>
-                <NavLink className='navlink' to='/protoss'>PROTOSS</NavLink>
-                <NavLink className='navlink' to='/zerg'>ZERG</NavLink> */}
+              
 
                 <NavLink className='navlink' to='/'>HOME</NavLink>
                 <NavLink className='navlink' onClick={hideShield} to='/terran'>TERRAN</NavLink>
@@ -50,7 +52,11 @@ function Navbar(props) {
                 
             </nav> 
             
+            {/* window.location.protoss.match(/protoss/) === ''? ''
+            ?(): ()
+             */}
             <ListHeader/>
+     
 
             {/* <div className="NavbarholderDark">
                 <h5 className="navtext">Darkmode</h5>

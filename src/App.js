@@ -1,6 +1,9 @@
 import React from 'react';
 import { Route } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import './App.scss';
+import './ToggleBox.scss'
 
 import Navbar from './components/navbar/Navbar';
 import Home from './components/Home';

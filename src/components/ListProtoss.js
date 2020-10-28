@@ -2,6 +2,7 @@ import React, {useState} from "react";
 
 import Img_mineral from "../images/minerals.jpg";
 import Img_gas from "../images/Gas.jpg";
+import {Accordion, Card, Button} from 'react-bootstrap'
 
 function ListProtoss(props) {
 
@@ -29,13 +30,13 @@ function ListProtoss(props) {
 
 
         const [unit, setUnit] = useState(props.filteredData1);
-        const [editing, setEditing] = useState(false); 
+        // const [editing, setEditing] = useState(false); 
 
 
-        const editRecipe = unit => {    
-            setEditing(true);
-            setUnit(unit);
-        };
+        // const editRecipe = unit => {    
+        //     setEditing(true);
+        //     setUnit(unit);
+        // };
 
     
 
@@ -44,7 +45,7 @@ function ListProtoss(props) {
             <div>
 {/* /////////////////////////// HIDDEN CONTAINER  //////////////////////////////////////// */}
 {/* ////////////////////////////////////////////////////////////////////////////////////// */}
-                {editing && (
+                {/* {editing && (
                         <div className="ContainerHidden">
                             <div className='UnitPortrait'>
                             <h4>{unit.name} </h4>
@@ -58,37 +59,60 @@ function ListProtoss(props) {
                             </div>                      
                           
                         </div>
-                )}
+                )} */}
 
 
 {/* /////////////////////////// PROTOSSS INFORMATION ///////////////////////////////////// */}
                 {props.filteredData1.map(a => (
-                    <div key={a.id} className='Container'>
-       
-                        <div className='UnitPortrait'>
-                            <h4 className='name'>{a.name}</h4>
-                            <img className='imageUnit' alt='unit' src={a.image}></img>
-                                
-                            {/* <button className="Btn" onClick={() => editRecipe(a)}>Show</button>
-                            <button className="Btn" onClick={() => setEditing(false)}>Hide</button>  */}
-                        </div>
-                    
-                        <h4 className='UnitText'>{a.supply}</h4>
-                         
-                        <h4 className='UnitText2'>{a.minerals}</h4>
-                           
-                        <h4 className='UnitText'>{a.gas}</h4>
-                           
-                        <h4 className='UnitText2'>{a.health}</h4>
-                           
-                        <h4 className='UnitShield'>{a.shield}</h4>
-                           
-                        <h4 className='UnitText2'>{a.groundAttack}</h4>
-                           
-                        <h4 className='UnitText'>{a.airAttack}</h4>
-                           
-                        <h4 className='UnitText2'>{a.bonus}</h4>
+                    <div key={a.id} className='ContainerA'>
 
+                        <div className='ContainerB'>
+       
+                            <div className='UnitPortrait'>
+                                <h4 className='name'>{a.name}</h4>
+                                <img className='imageUnit' alt='unit' src={a.image}></img>
+                                    
+                                {/* <button className="Btn" onClick={() => editRecipe(a)}>Show</button>
+                                <button className="Btn" onClick={() => setEditing(false)}>Hide</button>  */}
+                            </div>
+                    
+                            <h4 className='UnitText'>{a.supply}</h4>
+                            
+                            <h4 className='UnitText2'>{a.minerals}</h4>
+                            
+                            <h4 className='UnitText'>{a.gas}</h4>
+                            
+                            <h4 className='UnitText2'>{a.health}</h4>
+                            
+                            <h4 className='UnitShield'>{a.shield}</h4>
+                            
+                            <h4 className='UnitText2'>{a.groundAttack}</h4>
+                            
+                            <h4 className='UnitText'>{a.airAttack}</h4>
+                            
+                            <h4 className='UnitText2'>{a.bonus}</h4>
+                        </div>
+
+                        <div className='ContainerB'>
+                            <Accordion >
+                                <Card>
+                                    <Card.Header>
+                                    <Accordion.Toggle as={Button} variant="link" eventKey={a.id}>
+                                        Counters
+                                    </Accordion.Toggle>
+                                    </Card.Header>
+                                    <Accordion.Collapse eventKey={a.id}>
+                                        <Card.Body>
+
+                                        <h4 className='textAccord'>Type:{a.type}</h4>
+                                        <h4 className='textAccord'>Unit:{a.counter}</h4>
+
+                                        </Card.Body>
+                                    </Accordion.Collapse>
+                                </Card>
+                            </Accordion>
+                        </div>
+                        
                     </div>
                 ))}
 

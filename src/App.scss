@@ -15,17 +15,6 @@ p {
   font-size: 16px;
 }
 
-code,
-pre {
-  color: #d400ff;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace, serif;
-  font-size: 0.92em;
-}
-code:before,
-code:after {
-  content: '\`';
-}
 // /////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////
 
@@ -55,11 +44,13 @@ code:after {
   background: rgb(0, 89, 172);
   width: 128px;
   padding: 10px;
+  margin: 12px;
   text-decoration: none;
 }
 .active{
   width: 128px;
   padding: 10px;
+  margin: 12px;
   background: rgb(0, 132, 255);
 }
 
@@ -72,45 +63,24 @@ code:after {
 /////////// HEADER BAR //////////////////////////////////////
 ////////////////////////////////////////////////////////////
 
-
-.Container{
+.ContainerHeader{
   padding: 0 0 10px 4rem;
   display: flex;
-  border: 2px solid black;
   background: rgb(31, 31, 31);
 
-
-  .UnitPortrait{
-    padding-top: 10px;
-    justify-content: space-evenly;
-    width: 9rem;
-    // border: 2px solid red;
-    display: flex;
-
-    .name{
-      margin-right: 15px;
-    }
-  }
-
-  .imageRes{
-    padding: 20px 25px 20px 25px;
+  .imageResrc{
+    margin: 20px 25px 20px 25px;
+    // padding: 20px 25px 20px 25px;
     width: 45px;
     height: 45px;
   }
-  
-  .imageUnit{
-    padding-right: 25px;
-    width: 76px;
-    height: 76px;
-  }
 
+  
   .textUnit{
-    // border: 2px solid red;
     width: 9rem;
   }
 
   .text{
-    // border: 2px solid red;
     width: 6rem;
     background: gray;
   }
@@ -124,6 +94,48 @@ code:after {
     background: rgb(0, 162, 255);
     // text-decoration: underline;
   }
+}
+
+////////////////// UNIT CONTAINER ////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+
+.ContainerA{
+  padding: 0 0 10px 4rem;
+  display: flex;
+  flex-direction: column;
+  border: 4px solid black;
+  background: rgb(31, 31, 31);
+
+  .ContainerB{
+    display: flex;
+    padding-top: 12px;
+  }
+
+  .UnitPortrait{
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    justify-content: space-evenly;
+    width: 9rem;
+
+
+    .name{
+      margin-right: 15px;
+    }
+  }
+
+
+  
+  .imageUnit{
+    width: 76px;
+    height: 76px;
+  }
+
+  .textUnit{
+    width: 9rem;
+  }
+
+
 }
 
 ////////////// END HEADER BAR ///////////////////////////////////
@@ -161,20 +173,9 @@ code:after {
   border: 2px solid black;
 }
 
-.info{
-  display: none;
-  background: gray;
-  height: 150px;
-  border: 2px solid black;
-}
-
-.Checkbox1{
-  height: 24px;
-  width: 24px;
-}
-
 .UnitText{
   width: 6rem;
+  height: 4rem;
   background: gray;
 }
 
@@ -184,12 +185,10 @@ code:after {
 
 .UnitShield{
   width: 6rem;
-  /* padding: 25px 25px 5px; */
+  height: 4rem;
   background: rgb(0, 162, 255);
   
 }
-
-
 
 .Input{
   border-radius: 5px;
@@ -197,9 +196,8 @@ code:after {
   padding:1rem;
 }
 
-/* ///////////////////////////////////// */
-
-
+/* ///////////////////SEARCH BAR/////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////// */
 
 .Searchbar2{
   align-items: center;
@@ -224,7 +222,8 @@ code:after {
 } 
 
 .images{
- width: 100%;
+  // width: 50%;
+  width: 100%;
 }
 
 // .ImageProtoss{ 
@@ -259,8 +258,8 @@ code:after {
   border: 2px solid red; 
 }
 
-.textspacing{
+.textAccord{
   display: flex;
   padding: 1.5rem 25px 0;
-  // background: gray;
+  color: black;
 }

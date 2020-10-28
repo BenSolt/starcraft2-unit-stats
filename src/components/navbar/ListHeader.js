@@ -8,18 +8,17 @@ import { NavLink } from "react-router-dom";
 function List(props) {
 
     return (
-        <div id='header' className='Container'>
+        <div id='header' className='ContainerHeader'>
             {/* <button onClick={hideShield}>Hide</button> */}
                 <h4 className='textUnit'>UNIT</h4>
           
                 <h4 className='text'>SUPPLY</h4>
 
-                <img className='imageRes' alt='minerals' src={Img_mineral} />
-                {/* <h4 className='text2'>MINERAL</h4> */}
+                {/* <img className='imageResrc' alt='minerals' src={Img_mineral} /> */}
+                <h4 className='text2'>MINERAL</h4>
 
-                {/* <h4 className='text'>GAS</h4> */}
-
-                <img className='imageRes' alt='gas' src={Img_gas} /> 
+                <h4 className='text'>GAS</h4>
+                {/* <img className='imageResrc' alt='gas' src={Img_gas} />  */}
                
                 <h4 className='text2'>HEALTH</h4>
         
