@@ -35,8 +35,8 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
             airAttack: 0,
             bonus: 0,
 
-            type:' Light',
-            counter:' Drone, Probe, SCV, marine'
+            type:' Light, Mechanical',
+            strong:' -'
         },
 
         {
@@ -50,7 +50,11 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
             shield: 50,
             groundAttack: 8,
             airAttack: 0,
-            bonus: 0
+            bonus: 0,
+
+            type:' Light, Biological',
+            strong:' Maruader, Immortal, Zergling',
+            weak:' Hellion, Colossus, Roach'
         },
 
         {
@@ -64,7 +68,11 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
             shield: 40,
             groundAttack: 6,
             airAttack: 6,
-            bonus: 0
+            bonus: 0,
+
+            type:' Light, Mechanical, Psionic',
+            strong:' Zealot, zergling',
+            weak:' Stalker, Reaper, Hyralisk'
         },
 
         {
@@ -78,7 +86,11 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
             shield: 80,
             groundAttack: 13,
             airAttack: 13,
-            bonus: '+' + 5 + ' Armored'
+            bonus: '+' + 5 + ' Armored',
+
+            type:' Armored, Mechanical',
+            strong:' Reaper, Void, Mutalisk',
+            weak:' Maruader, Immortal, Zergling'
         },
 
         {
@@ -94,8 +106,9 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
             airAttack: 1,
             bonus: '+'+ 12 + 'Light',
 
-            type:' Light',
-            counter:' Drone, Probe, SCV, marine'
+            type:' Light, Biological',
+            strong:' Drone, Probe, SCV, marine',
+            weak:' Roach, Stalker, Marauder'
         },
 
         {
@@ -109,7 +122,11 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
             shield: 40,
             groundAttack: 0,
             airAttack: 0,
-            bonus: 0
+            bonus: 0,
+
+            type:' Biological, Light, Psionic',
+            strong:' -',
+            weak:' -'
         },
 
         {
@@ -123,7 +140,11 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
             shield: 80,
             groundAttack: 45,
             airAttack: 0,
-            bonus: 0
+            bonus: 0,
+
+            type:' Biological, Light, Psionic',
+            strong:' Probe, SCV, Drone',
+            weak:' Detector, Air'
         },
 
         {
@@ -137,7 +158,11 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
             shield: 350,
             groundAttack: 25,
             airAttack: 25,
-            bonus: '+'+ 10 + 'Biological'
+            bonus: '+'+ 10 + 'Biological',
+
+            type:' Psionic, Massive',
+            strong:' Mutalisk',
+            weak:' Thor, Ultralisk, Immortal'
         },
 
         {
@@ -151,7 +176,11 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
             shield: 20,
             groundAttack: 0,
             airAttack: 0,
-            bonus: 0
+            bonus: 0,
+
+            type:' Light, Mechanical, Detector',
+            strong:' Cloaked Units',
+            weak:' Detectors'
         },
 
         {
@@ -165,7 +194,11 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
             shield: 100,
             groundAttack: 20,
             airAttack: 0,
-            bonus: '+'+ 30 +'Armored'
+            bonus: '+'+ 30 +'Armored',
+
+            type:' Armored, Mechanical',
+            strong:' Siege Tank, Stalker, Roach',
+            weak:' Marine, Zealot, Zergling'
         },
 
         {
@@ -179,7 +212,12 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
             shield: 100,
             groundAttack: 0,
             airAttack: 0,
-            bonus: 0
+            bonus: 0,
+
+            
+            type:' Armored, Mechanical, Psionic',
+            strong:' -',
+            weak:' -'
         },
 
         {
@@ -193,7 +231,11 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
             shield: 150,
             groundAttack: 10,
             airAttack: 0,
-            bonus: '+'+5 +'Light'
+            bonus: '+'+5 +'Light',
+
+            type:' Armored, Mechanical, Massive',
+            strong:' Marine, Zealot, Zergling',
+            weak:' Air'
         },
 
         {
@@ -207,7 +249,11 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
             shield: 100,
             groundAttack: 0,
             airAttack: 0,
-            bonus: 0
+            bonus: 0,
+
+            type:' Armored, Mechanical',
+            strong:' Marauder, Hydralisk, Probe',
+            weak:' Thor, Ultralisk, Immortal'
         },
 
         {
@@ -221,7 +267,11 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
             shield: 60,
             groundAttack: 10,
             airAttack: 5,
-            bonus: '+'+ 5 + 'Light'
+            bonus: '+'+ 5 + 'Light',
+
+            type:' Light',
+            strong:' Banshee, Void Ray, Mutalisk',
+            weak:' Battlecruiser, Carrier, Corruptor'
         },
 
         {
@@ -235,7 +285,11 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
             shield: 60,
             groundAttack: 15,
             airAttack: 0,
-            bonus: '+'+ 7 + 'Light'
+            bonus: '+'+ 7 + 'Light',
+
+            type:' Armored, Mechanical, Psionic',
+            strong:' SCV, Drone, Probe',
+            weak:' Viking, Phoenix, Mutalisk'
         },
 
         {
@@ -249,7 +303,11 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
             shield: 100,
             groundAttack: 6,
             airAttack: 6,
-            bonus: '+'+ 4 +','+'+' + 10 +'Armored'
+            bonus: '+'+ 4 +','+'+' + 10 +'Armored',
+
+            type:' Armored, Mechanical',
+            strong:' Corruptor, Battlecruiser, Tempest',
+            weak:' Viking, Phoenix, Mutalisk'
         },
 
         {
@@ -263,7 +321,11 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
             shield: 100,
             groundAttack: 40,
             airAttack: 30,
-            bonus: '+'+ 22 + 'Massive'
+            bonus: '+'+ 22 + 'Massive',
+
+            type:' Armored, Massive, Mechanical',
+            strong:' Liberator, BroodLord, Colossus',
+            weak:' Viking, Corruptor, Void Ray'
         },
 
         {
@@ -277,7 +339,11 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
             shield: 150,
             groundAttack: 5,
             airAttack: 5,
-            bonus: 0
+            bonus: 0,
+
+            type:' Armored, Massive, Mechanical',
+            strong:' Thor, Mutalisk, Phoenix',
+            weak:' Viking, Corruptor, Tempest'
         },
 
         {
@@ -289,23 +355,19 @@ import Img_VoidRay from "../images/VoidRay_SC2_Rend1.jpg";
             gas: 400,
             health: 350,
             shield: 350,
-            groundAttack: 1,
-            airAttack: 1,
-            bonus: 1
+            groundAttack: 6,
+            airAttack: 6,
+            bonus: 1,
+
+            type:' Armored, Massive, Psionic, Mechanical, Heroic',
+            strong:' -',
+            weak:' Viking, Corruptor, Void Ray'
         }
     ]
     
 
-    const ProtossCounter = [
-        {
-            
-            id: 5,
-            type: 'Light',
-            counter:'Probe'
-        }
-    ]
+
 
 export {
     Protoss,
-    ProtossCounter
 }

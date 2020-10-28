@@ -30,39 +30,11 @@ function ListProtoss(props) {
 
 
         const [unit, setUnit] = useState(props.filteredData1);
-        // const [editing, setEditing] = useState(false); 
-
-
-        // const editRecipe = unit => {    
-        //     setEditing(true);
-        //     setUnit(unit);
-        // };
-
-    
+      
 
     return (
         
             <div>
-{/* /////////////////////////// HIDDEN CONTAINER  //////////////////////////////////////// */}
-{/* ////////////////////////////////////////////////////////////////////////////////////// */}
-                {/* {editing && (
-                        <div className="ContainerHidden">
-                            <div className='UnitPortrait'>
-                            <h4>{unit.name} </h4>
-                            <img className='image2' alt='unit' src={unit.image}/>
-                            </div>
-
-                            <h4 className='textspacing'>{unit.type}</h4>
-                            <h4 className='textspacing'>{unit.counter}</h4>
-                            <div className='Btnholder'>
-                            <button className="BtnEditCancel" onClick={() => setEditing(false)}>cancel</button>
-                            </div>                      
-                          
-                        </div>
-                )} */}
-
-
-{/* /////////////////////////// PROTOSSS INFORMATION ///////////////////////////////////// */}
                 {props.filteredData1.map(a => (
                     <div key={a.id} className='ContainerA'>
 
@@ -93,6 +65,8 @@ function ListProtoss(props) {
                             <h4 className='UnitText2'>{a.bonus}</h4>
                         </div>
 
+
+
                         <div className='ContainerB'>
                             <Accordion >
                                 <Card>
@@ -105,7 +79,8 @@ function ListProtoss(props) {
                                         <Card.Body>
 
                                         <h4 className='textAccord'>Type:{a.type}</h4>
-                                        <h4 className='textAccord'>Unit:{a.counter}</h4>
+                                        <h4 className='textAccord'>Strong:{a.strong}</h4>
+                                        <h4 className='textAccord'>Weak:{a.weak}</h4>
 
                                         </Card.Body>
                                     </Accordion.Collapse>

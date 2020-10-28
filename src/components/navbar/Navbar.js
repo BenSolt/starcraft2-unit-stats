@@ -55,6 +55,9 @@ function Navbar(props) {
             {/* window.location.protoss.match(/protoss/) === ''? ''
             ?(): ()
              */}
+
+             {/* {window.location.protoss.match(/protoss/) === '/protoss' ? console.log('SHOW'):  console.log('HIDE')} */}
+
             <ListHeader/>
      
 
