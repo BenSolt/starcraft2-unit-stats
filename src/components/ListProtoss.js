@@ -37,16 +37,17 @@ function ListProtoss(props) {
             setUnit(unit);
         };
 
-  
+    
 
     return (
         
             <div>
-
+{/* /////////////////////////// HIDDEN CONTAINER  //////////////////////////////////////// */}
+{/* ////////////////////////////////////////////////////////////////////////////////////// */}
                 {editing && (
-                        <div className="Container2">
+                        <div className="ContainerHidden">
                             <div className='UnitPortrait'>
-                            <h3>{unit.name} </h3>
+                            <h4>{unit.name} </h4>
                             <img className='image2' alt='unit' src={unit.image}/>
                             </div>
 
@@ -66,29 +67,31 @@ function ListProtoss(props) {
        
                         <div className='UnitPortrait'>
                             <h4 className='name'>{a.name}</h4>
-                            <img className='image2' alt='unit' src={a.image}></img>
+                            <img className='imageUnit' alt='unit' src={a.image}></img>
                                 
-                            <button className="Btn" onClick={() => editRecipe(a)}>Show</button>
-                            <button className="Btn" onClick={() => setEditing(false)}>Hide</button> 
+                            {/* <button className="Btn" onClick={() => editRecipe(a)}>Show</button>
+                            <button className="Btn" onClick={() => setEditing(false)}>Hide</button>  */}
                         </div>
                     
-                        <h4 className='text'>{a.supply}</h4>
+                        <h4 className='UnitText'>{a.supply}</h4>
                          
-                        <h4 className='text'>{a.minerals}</h4>
+                        <h4 className='UnitText2'>{a.minerals}</h4>
                            
-                        <h4 className='text'>{a.gas}</h4>
+                        <h4 className='UnitText'>{a.gas}</h4>
                            
-                        <h4 className='text'>{a.health}</h4>
+                        <h4 className='UnitText2'>{a.health}</h4>
                            
                         <h4 className='UnitShield'>{a.shield}</h4>
                            
-                        <h4 className='text'>{a.groundAttack}</h4>
+                        <h4 className='UnitText2'>{a.groundAttack}</h4>
                            
-                        <h4 className='text'>{a.airAttack}</h4>
+                        <h4 className='UnitText'>{a.airAttack}</h4>
                            
-                        <h4 className='text'>{a.bonus}</h4>
+                        <h4 className='UnitText2'>{a.bonus}</h4>
+
                     </div>
                 ))}
+
             </div>
     );
 }

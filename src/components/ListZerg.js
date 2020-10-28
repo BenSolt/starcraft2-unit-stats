@@ -11,22 +11,22 @@ function ListZerg(props) {
 
                             <div className='UnitPortrait'>
                                 <h4 className='name'>{a.name}</h4>
-                                <img className='image2' alt='unit' src={a.image}></img>
+                                <img className='imageUnit' alt='unit' src={a.image}></img>
                             </div>
 
-                                <h4>{a.supply}</h4>
+                                <h4 className='UnitText'>{a.supply}</h4>
                   
-                                <h4>{a.minerals}</h4>
+                                <h4 className='UnitText2'>{a.minerals}</h4>
                           
-                                <h4>{a.gas}</h4>
+                                <h4 className='UnitText'>{a.gas}</h4>
 
-                                <h4>{a.health}</h4>
+                                <h4 className='UnitText2'>{a.health}</h4>
                            
-                                <h4>{a.groundAttack}</h4>
+                                <h4 className='UnitText'>{a.groundAttack}</h4>
                            
-                                <h4>{a.airAttack}</h4>
+                                <h4 className='UnitText2'>{a.airAttack}</h4>
                          
-                                <h4>{a.bonus}</h4>
+                                <h4 className='UnitText'>{a.bonus}</h4>
                         </div>
                     )
                 })}

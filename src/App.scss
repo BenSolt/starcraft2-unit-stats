@@ -1,17 +1,3 @@
-main {
-  align-content: center;
-  box-sizing: border-box;
-  display: grid;
-  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
-    'Arial', sans-serif;
-  hyphens: auto;
-  line-height: 1.65;
-  margin: 0 auto;
-  max-width: 680px;
-  min-height: 100vh;
-  padding: 72px 0;
-  text-align: center;
-}
 h1 {
   font-size: 45px;
 }
@@ -21,8 +7,6 @@ h2 {
 }
 
 h4 {
-  // padding: 0 12px 0;
-  // padding-top: 30px;
   text-align: center; 
   color: white;
 }
@@ -30,16 +14,7 @@ h4 {
 p {
   font-size: 16px;
 }
-a {
-  border-bottom: 1px solid white;
-  color: #0076ff;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
-a:hover {
-  border-bottom: 1px solid #0076ff;
-}
+
 code,
 pre {
   color: #d400ff;
@@ -51,7 +26,8 @@ code:before,
 code:after {
   content: '\`';
 }
-
+// /////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -96,45 +72,68 @@ code:after {
 /////////// HEADER BAR //////////////////////////////////////
 ////////////////////////////////////////////////////////////
 
+
 .Container{
-  padding-top: 20px;
+  padding: 0 0 10px 4rem;
   display: flex;
-  justify-content: space-evenly;
   border: 2px solid black;
   background: rgb(31, 31, 31);
 
+
   .UnitPortrait{
+    padding-top: 10px;
+    justify-content: space-evenly;
+    width: 9rem;
+    // border: 2px solid red;
     display: flex;
-    flex-direction: column; 
+
+    .name{
+      margin-right: 15px;
+    }
   }
 
-  .image1{
-    padding: 20px;
-    width: 60px;
-    height: 60px;
-    // padding: 10px 25px 0;
+  .imageRes{
+    padding: 20px 25px 20px 25px;
+    width: 45px;
+    height: 45px;
   }
   
-  .image2{
-  // padding: 0 25px 0;
-  width: 76px;
-  height: 76px;
+  .imageUnit{
+    padding-right: 25px;
+    width: 76px;
+    height: 76px;
+  }
+
+  .textUnit{
+    // border: 2px solid red;
+    width: 9rem;
   }
 
   .text{
-    padding: 0 20px 0;
-    text-decoration: underline;
+    // border: 2px solid red;
+    width: 6rem;
+    background: gray;
   }
 
+  .text2{
+    width: 6rem;
+  }
+
+  .TextShield{
+    width: 6rem;
+    background: rgb(0, 162, 255);
+    // text-decoration: underline;
+  }
 }
 
 ////////////// END HEADER BAR ///////////////////////////////////
 
-.Container2{
-  padding-top: 20px;
+.ContainerHidden{
+  padding-top: 10px;
   display: flex;
   justify-content: space-evenly;
   border: 2px solid black;
+  background: rgb(59, 59, 59);
 
   .UnitPortrait{
     display: flex;
@@ -142,9 +141,6 @@ code:after {
   }
 
 }
-
-
-
 
 .Btn{
   margin: 4px 0 4px;
@@ -177,31 +173,20 @@ code:after {
   width: 24px;
 }
 
-.name{
-  margin: 3px 30px 3px;
-  
+.UnitText{
+  width: 6rem;
+  background: gray;
 }
 
-
-
-.TextHeaderShield{
-  /* width: 5px; */
-  text-decoration: underline;
-  /* color: white; */
-}
-
-
-.TextUnits{
-  display: flex;
-  /* width: 10px; */
-  /* padding: 25px 0 0; */
-  background: gray; 
-  border: 2px solid red;
+.UnitText2{
+  width: 6rem;
 }
 
 .UnitShield{
+  width: 6rem;
   /* padding: 25px 25px 5px; */
   background: rgb(0, 162, 255);
+  
 }
 
 
@@ -219,7 +204,7 @@ code:after {
 .Searchbar2{
   align-items: center;
   display: flex;
-  padding:7rem 2rem 0;
+  padding:4rem 2rem 0;
   background: rgb(31, 31, 31);
 
   .Searchtext{
@@ -277,5 +262,5 @@ code:after {
 .textspacing{
   display: flex;
   padding: 1.5rem 25px 0;
-  /* background: gray; */
+  // background: gray;
 }
