@@ -1,13 +1,14 @@
 import React from "react";
+import {Accordion, Card, Button} from 'react-bootstrap'
 
 function ListZerg(props) {
 
 
     return (
             <div>
-                {props.filteredData1.map(a => {
-                    return (
-                        <div className='ContainerA'>
+                {props.filteredData1.map(a => (
+                  
+                        <div key={a.id} className='ContainerA'>
 
 <                           div className='ContainerB'> 
 
@@ -30,9 +31,30 @@ function ListZerg(props) {
                             
                                 <h4 className='UnitText'>{a.bonus}</h4>
                             </div>
+
+
+                            <div className='ContainerB'>
+                            <Accordion >
+                                <Card>
+                                    <Card.Header>
+                                    <Accordion.Toggle as={Button} variant="link" eventKey={a.id}>
+                                        Counters
+                                    </Accordion.Toggle>
+                                    </Card.Header>
+                                    <Accordion.Collapse eventKey={a.id}>
+                                        <Card.Body>
+
+                                        <h4 className='textAccord'>Type:{a.type}</h4>
+                                        <h4 className='textAccord'>Strong:{a.strong}</h4>
+                                        <h4 className='textAccord'>Weak:{a.weak}</h4>
+
+                                        </Card.Body>
+                                    </Accordion.Collapse>
+                                </Card>
+                            </Accordion>
                         </div>
-                    )
-                })}
+                    </div>
+                ))}
             </div>
     );
 }
