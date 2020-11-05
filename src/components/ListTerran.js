@@ -8,6 +8,7 @@ function ListTerran(props) {
             <div>
                 {props.filteredData1.map(a => (
                         <div key={a.id} className='ContainerA'>
+                            
 
                             <div className='ContainerB'>
                                 

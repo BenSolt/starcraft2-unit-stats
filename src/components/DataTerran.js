@@ -66,7 +66,7 @@ const Terran = [
         airAttack: 6,
         bonus: 0,
 
-        type:' -',
+        type:' Light, Biological',
         strong:' -',
         weak:' -'
     },
@@ -83,7 +83,7 @@ const Terran = [
         airAttack: 0,
         bonus: '+' + 5 + ' Armored',
 
-        type:' -',
+        type:' Armored, Biological',
         strong:' -',
         weak:' -'
     },
@@ -100,7 +100,7 @@ const Terran = [
         airAttack: 0,
         bonus: 1,
 
-        type:' -',
+        type:' Light, Biological',
         strong:' -',
         weak:' -'
     },
@@ -117,7 +117,7 @@ const Terran = [
         airAttack: 10,
         bonus: '+'+ 10 +'Light',
 
-        type:' -',
+        type:' Psionic, Biological',
         strong:' -',
         weak:' -'
     },
@@ -134,7 +134,7 @@ const Terran = [
         airAttack: 0,
         bonus: '+'+ 5 +'Light',
 
-        type:' -',
+        type:' Light, Mechanical',
         strong:' -',
         weak:' -'
     },
@@ -151,7 +151,7 @@ const Terran = [
         airAttack: 1,
         bonus: '+'+ 12 +'Light',
 
-        type:' -',
+        type:' Light, Biological, Mechanical',
         strong:' -',
         weak:' -'
     },
@@ -168,7 +168,7 @@ const Terran = [
         airAttack: 0,
         bonus: '+'+ 35+'Shield',
 
-        type:' -',
+        type:' Light, Mechanical',
         strong:' -',
         weak:' -'
     },
@@ -185,7 +185,7 @@ const Terran = [
         airAttack: 1,
         bonus: '+'+'Tank:'+ 15 +'armored' + 'Siege:'+'+'+ 30 + 'armored',
         
-        type:' -',
+        type:' Armored, Mechanical',
         strong:' -',
         weak:' -'
     },
@@ -202,7 +202,7 @@ const Terran = [
         airAttack: 18,
         bonus: 0,
 
-        type:' -',
+        type:' Armored, Mechanical',
         strong:' -',
         weak:' -'
     },
@@ -219,7 +219,7 @@ const Terran = [
         airAttack: 'Explosive:'+6 + 'High Impact:'+40,
         bonus: 'Explosive:'+ '+'+6+'Light' +'High Impact:'+'+'+15+'Massive',
         
-        type:' -',
+        type:' Armored, Massive, Mechanical',
         strong:' -',
         weak:' -'
     
@@ -237,7 +237,7 @@ const Terran = [
         airAttack: 10,
         bonus: 'Air:'+'+'+ 4+'Armored' +'Ground:' + '+'+8+'Massive',
         
-        type:' -',
+        type:' Armored, Mechanical',
         strong:' -',
         weak:' -'
     
@@ -255,7 +255,7 @@ const Terran = [
         airAttack: 0,
         bonus: 0,
 
-        type:' -',
+        type:' Armored, Mechanical',
         strong:' -',
         weak:' -'
     },
@@ -272,7 +272,7 @@ const Terran = [
         airAttack: 5,
         bonus: 0,
 
-        type:' -',
+        type:' Armored, Mechanical',
         strong:' -',
         weak:' -'
     },
@@ -289,7 +289,7 @@ const Terran = [
         airAttack: 0,
         bonus: 0,
 
-        type:' -',
+        type:' Light, Mechanical',
         strong:' -',
         weak:' -'
     },
@@ -306,7 +306,7 @@ const Terran = [
         airAttack: 0,
         bonus: 0,
 
-        type:' -',
+        type:' Light, Mechanical',
         strong:' -',
         weak:' -'
     },
@@ -323,7 +323,7 @@ const Terran = [
         airAttack: 6,
         bonus: 0,
 
-        type:' -',
+        type:' Armored, Massive, Mechanical',
         strong:' -',
         weak:' -'
     },
