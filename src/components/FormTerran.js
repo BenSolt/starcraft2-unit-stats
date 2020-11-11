@@ -10,14 +10,6 @@ import {Terran} from './DataTerran';
 
 function FormTerran(props) {
 
-        // const Protoss = [
-
-    //     'Interceptor',
-    //     'Mothership Core',
-    //     'Photon Cannon',
-    //     'Pylon',
-    // ]
-
     const [filteredData, setFilteredData] = useState(Terran);
     const [filter, setFilter] = useState("");
 

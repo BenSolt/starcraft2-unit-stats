@@ -44,8 +44,6 @@ function ListProtoss(props) {
                                 <h4 className='name'>{a.name}</h4>
                                 <img className='imageUnit' alt='unit' src={a.image}></img>
                                     
-                                {/* <button className="Btn" onClick={() => editRecipe(a)}>Show</button>
-                                <button className="Btn" onClick={() => setEditing(false)}>Hide</button>  */}
                             </div>
                     
                             <h4 className='UnitText'>{a.supply}</h4>

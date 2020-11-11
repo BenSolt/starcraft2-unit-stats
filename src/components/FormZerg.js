@@ -10,14 +10,6 @@ import {Zerg} from './DataZerg';
 
 function FormZerg(props) {
 
-        // const Protoss = [
-
-    //     'Interceptor',
-    //     'Mothership Core',
-    //     'Photon Cannon',
-    //     'Pylon',
-    // ]
-
     const [filteredData, setFilteredData] = useState(Zerg);
     const [filter, setFilter] = useState("");
     
@@ -43,10 +35,7 @@ function FormZerg(props) {
                     </div>
                 </div>
 
-                {/* <ListHeader/> */}
-
                 <ListZerg filteredData1={filteredData}/>
-
 
             </div>
         </div>
