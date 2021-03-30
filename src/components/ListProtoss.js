@@ -77,8 +77,8 @@ function ListProtoss(props) {
                                         <Card.Body>
 
                                         <h4 className='textAccord'>Type:{a.type}</h4>
-                                        <h4 className='textAccord'>Strong:{a.strong}</h4>
-                                        <h4 className='textAccord'>Weak:{a.weak}</h4>
+                                        <h4 className='textAccord'>Strong Against:{a.strong}</h4>
+                                        <h4 className='textAccord'>Weak Against:{a.weak}</h4>
 
                                         </Card.Body>
                                     </Accordion.Collapse>
